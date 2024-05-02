@@ -5,8 +5,8 @@ from .forms import UserForm, CategoryForm, ProductForm
 from .models import User, Category, Product
 
 
-def sum_stock(request):
-    return HttpResponse('<h1>Hello word</h1>')
+def index(request):
+    return render(request, 'myapp2/index.html')
 
 
 def user_form(request):
@@ -27,7 +27,7 @@ def user_form(request):
         form = UserForm()
         message = 'Заполните форму'
 
-    return render(request, 'myapp2/user_form.html', {'form': form, 'message': message})
+    return render(request, 'myapp2/add_user.html', {'form': form, 'message': message})
 
 
 def product_form(request):

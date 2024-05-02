@@ -5,7 +5,15 @@
     <title>{% block title %}Формы{% endblock %}</title>
 </head>
 <body>
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/user/add">Add User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/product/add">Add Product</a>
+                    </li>
 
+                </ul>
 {% block content %}
 Контент скоро появится...
 {% endblock %}

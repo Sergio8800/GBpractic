@@ -201,3 +201,65 @@ Watching for file changes with StatReloader
 "GET /myapp2/product/add/ HTTP/1.1" 200 1383
 "POST /myapp2/product/add/ HTTP/1.1" 302 0
 "GET /myapp2/product/add/ HTTP/1.1" 200 1383
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 155
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 13805)
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 568
+Not Found: /user_form
+"GET /user_form HTTP/1.1" 404 2799
+Not Found: /product_form
+"GET /product_form HTTP/1.1" 404 2808
+Not Found: /user_form
+"GET /user_form HTTP/1.1" 404 2799
+"GET / HTTP/1.1" 200 576
+Not Found: /add/user_form
+"GET /add/user_form HTTP/1.1" 404 2811
+"GET / HTTP/1.1" 200 566
+"GET /user/add HTTP/1.1" 301 0
+Internal Server Error: /user/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 30, in user_form
+    return render(request, 'myapp2/user_form.html', {'form': form, 'message': message})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp2/user_form.html
+"GET /user/add/ HTTP/1.1" 500 80588
+"GET / HTTP/1.1" 200 580
+Not Found: /myapp2/user/add
+"GET /myapp2/user/add HTTP/1.1" 404 2817
+Not Found: /index
+"GET /index HTTP/1.1" 404 2787
+"GET / HTTP/1.1" 200 580
+"GET / HTTP/1.1" 200 566
+Internal Server Error: /user/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 30, in user_form
+    return render(request, 'myapp2/user_form.html', {'form': form, 'message': message})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp2/user_form.html
+"GET /user/add/ HTTP/1.1" 500 80588
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /user/add/ HTTP/1.1" 200 1360
+"GET /product/add HTTP/1.1" 301 0
+"GET /product/add/ HTTP/1.1" 200 1794

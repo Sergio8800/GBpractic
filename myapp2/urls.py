@@ -6,7 +6,8 @@ from . import views
 from .views import *
 
 urlpatterns = [
-    path('sum/', views.sum_stock, name='sum_stock'),
+    path('', views.index, name='index'),
+    # path('sum/', views.sum_stock, name='sum_stock'),
     path('user/add/', user_form, name='user_form'),
     path('cat/add/', category_form, name='category_form'),
     path('product/add/', product_form, name='product_form'),
