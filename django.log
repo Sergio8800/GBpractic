@@ -1,0 +1,203 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 23
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2548
+Not Found: /sum
+"GET /sum HTTP/1.1" 404 2524
+"GET /myapp2/sum HTTP/1.1" 301 0
+"GET /myapp2/sum/ HTTP/1.1" 200 19
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 23
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2548
+Not Found: /myapp2/
+"GET /myapp2/ HTTP/1.1" 404 2970
+Internal Server Error: /myapp2/cat/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 41, in category_form
+    return render(request, 'myapp2/category_form.html', {'form': form})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp2/category_form.html
+"GET /myapp2/cat/add/ HTTP/1.1" 500 79679
+"GET /myapp2/cat/add/ HTTP/1.1" 200 493
+"POST /myapp2/cat/add/ HTTP/1.1" 200 511
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /myapp2/cat/add/ HTTP/1.1" 200 550
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /myapp2/cat/add/ HTTP/1.1" 302 0
+"GET /myapp2/cat/add/ HTTP/1.1" 200 507
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 13003)
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/cat/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 44, in category_form
+    return redirect(category_form, {'message': message})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'myapp2.views.category_form' with arguments '({'message': 'Категория power_bank save in DB'},)' not found. 1 pattern(s) tried: ['myapp2/cat/add/\\Z']
+"POST /myapp2/cat/add/ HTTP/1.1" 500 86790
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/cat/add/ HTTP/1.1" 200 507
+"GET /myapp2/product/add/ HTTP/1.1" 200 507
+"GET /myapp2/product/add/ HTTP/1.1" 200 507
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/product/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 50, in product_form
+    return render(request, 'myapp2/product_form.html', {'form': form, 'message': message})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 909, in _resolve_lookup
+    current = current()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 99, in as_div
+    return self.render(self.template_name_div)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 55, in render
+    return mark_safe(renderer.render(template, context))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\renderers.py", line 29, in render
+    return template.render(context, request=request).strip()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 909, in _resolve_lookup
+    current = current()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 63, in as_field_group
+    return self.render()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 55, in render
+    return mark_safe(renderer.render(template, context))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\renderers.py", line 29, in render
+    return template.render(context, request=request).strip()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 79, in __str__
+    return self.as_widget()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\boundfield.py", line 95, in as_widget
+    attrs = self.build_widget_attrs(attrs, widget)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\boundfield.py", line 270, in build_widget_attrs
+    widget.use_required_attribute(self.initial)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\widgets.py", line 785, in use_required_attribute
+    first_choice = next(iter(self.choices), None)
+TypeError: 'DeferredAttribute' object is not iterable
+"GET /myapp2/product/add/ HTTP/1.1" 500 295659
+C:\Auto_site_practic_gb\myproject\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 1383
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 1383
