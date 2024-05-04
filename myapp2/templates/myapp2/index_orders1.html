@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+<div class="welcome">
+
+    <h1><strong>Welcome</strong> to our website !</h1>
+    <p class="question">{{diapason}}</p>
+    <link rel="stylesheet" href="">
+</div>
+<div class="question">
+    {% for product in orders %}
+
+
+    <div class="answer">
+        <h4>{{ product.customer.name }}</h4>
+        <h4>{{ product.products.name }}</h4>
+    <h4>Количество: {{ product.quantity_prod }}</h4>
+        <h3>{{ product.total_price }}</h3>
+    </div>
+
+{% endfor %}
+</div>
+
+
+
+
+{% endblock %}
+

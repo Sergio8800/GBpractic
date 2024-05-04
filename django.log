@@ -263,3 +263,852 @@ Watching for file changes with StatReloader
 "GET /user/add/ HTTP/1.1" 200 1360
 "GET /product/add HTTP/1.1" 301 0
 "GET /product/add/ HTTP/1.1" 200 1794
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1480
+Not Found: /myapp2/static/css/style.css
+"GET /myapp2/static/css/style.css HTTP/1.1" 404 2853
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 4882)
+"GET / HTTP/1.1" 200 1473
+"GET /static/css/style.css HTTP/1.1" 200 1881
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 4884)
+"GET / HTTP/1.1" 200 1473
+"GET /static/css/style.css HTTP/1.1" 200 1912
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 4888)
+"GET / HTTP/1.1" 200 1473
+"GET /static/css/style.css HTTP/1.1" 200 1942
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 4891)
+"GET / HTTP/1.1" 200 1473
+"GET /static/css/style.css HTTP/1.1" 200 1980
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 4896)
+"GET / HTTP/1.1" 200 1473
+"GET /static/css/style.css HTTP/1.1" 200 2073
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 4901)
+"GET / HTTP/1.1" 200 1473
+"GET /static/css/style.css HTTP/1.1" 200 1918
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 4904)
+"GET / HTTP/1.1" 200 1473
+"GET /static/css/style.css HTTP/1.1" 200 1922
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 4907)
+"GET / HTTP/1.1" 200 1473
+"GET /static/css/style.css HTTP/1.1" 200 1924
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2805
+"GET / HTTP/1.1" 200 1473
+"GET /static/css/style.css HTTP/1.1" 200 1928
+"GET /product/add/ HTTP/1.1" 200 2701
+Not Found: /product/add/static/css/style.css
+"GET /product/add/static/css/style.css HTTP/1.1" 404 2868
+"GET / HTTP/1.1" 200 955
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1452
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 4989)
+"GET / HTTP/1.1" 200 1452
+"GET /static/css/style.css HTTP/1.1" 200 1928
+"GET / HTTP/1.1" 200 1452
+"GET /static/css/style.css HTTP/1.1" 200 2126
+"GET / HTTP/1.1" 200 1452
+"GET /static/css/style.css HTTP/1.1" 200 2130
+"GET / HTTP/1.1" 200 1452
+"GET /static/css/style.css HTTP/1.1" 200 2130
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1450
+"GET /static/css/style.css HTTP/1.1" 200 2130
+"GET / HTTP/1.1" 200 1450
+"GET /static/css/style.css HTTP/1.1" 200 2130
+"GET / HTTP/1.1" 200 1450
+"GET /static/css/style.css HTTP/1.1" 200 2130
+"GET / HTTP/1.1" 200 1450
+"GET /static/css/style.css HTTP/1.1" 200 2130
+"GET / HTTP/1.1" 200 1450
+"GET /static/css/style.css HTTP/1.1" 200 2130
+"GET / HTTP/1.1" 200 1450
+"GET /static/css/style.css HTTP/1.1" 200 2130
+"GET / HTTP/1.1" 200 1450
+"GET /static/css/style.css HTTP/1.1" 200 2130
+"GET / HTTP/1.1" 200 1634
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1818
+"GET / HTTP/1.1" 200 1334
+"GET /static/css/style.css HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1343
+"GET /static/css/style.css HTTP/1.1" 200 2130
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6279)
+"GET /user/add/ HTTP/1.1" 200 1429
+Not Found: /user/add/static/css/style.css
+"GET /user/add/static/css/style.css HTTP/1.1" 404 2859
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6281)
+"GET /user/add/ HTTP/1.1" 200 1429
+Not Found: /user/add/static/css/style.css
+"GET /user/add/static/css/style.css HTTP/1.1" 404 2859
+"GET /product/add/ HTTP/1.1" 200 1863
+Not Found: /product/add/static/css/style.css
+"GET /product/add/static/css/style.css HTTP/1.1" 404 2868
+"GET /user/add/ HTTP/1.1" 200 1429
+Not Found: /user/add/static/css/style.css
+"GET /user/add/static/css/style.css HTTP/1.1" 404 2859
+"GET / HTTP/1.1" 200 1343
+"GET / HTTP/1.1" 200 1343
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1343
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1343
+"GET /user/add/ HTTP/1.1" 200 1429
+Not Found: /user/add/static/css/style.css
+"GET /user/add/static/css/style.css HTTP/1.1" 404 2859
+C:\Auto_site_practic_gb\myproject\myproject\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2168
+Not Found: /
+"GET / HTTP/1.1" 404 2168
+C:\Auto_site_practic_gb\myproject\myproject\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myproject\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myproject\views.py", line 4, in redirect_list
+    return redirect('myapp2_list_url', permanent=True)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'myapp2_list_url' not found. 'myapp2_list_url' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 81722
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6328)
+C:\Auto_site_practic_gb\myproject\myproject\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 301 0
+"GET /myapp2 HTTP/1.1" 200 1343
+"GET /static/css/style.css HTTP/1.1" 200 2130
+"GET /myapp2 HTTP/1.1" 200 613
+Not Found: /user/add
+- Broken pipe from ('127.0.0.1', 6337)
+Not Found: /user/add/
+"GET /user/add/ HTTP/1.1" 404 2313
+"GET /myapp2 HTTP/1.1" 200 1343
+Not Found: /product/add
+- Broken pipe from ('127.0.0.1', 6339)
+Not Found: /product/add/
+"GET /product/add/ HTTP/1.1" 404 2322
+Not Found: /myapp2/product/add/
+"GET /myapp2/product/add/ HTTP/1.1" 404 2959
+C:\Auto_site_practic_gb\myproject\myproject\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 1863
+Not Found: /myapp2/product/add/static/css/style.css
+"GET /myapp2/product/add/static/css/style.css HTTP/1.1" 404 3023
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /myapp2/product/add/
+"GET /myapp2/product/add/ HTTP/1.1" 404 2984
+"GET /myapp2 HTTP/1.1" 301 0
+"GET /myapp2/ HTTP/1.1" 200 1343
+Not Found: /myapp2/static/css/style.css
+"GET /myapp2/static/css/style.css HTTP/1.1" 404 3008
+Not Found: /user/add
+- Broken pipe from ('127.0.0.1', 6355)
+Not Found: /user/add/
+"GET /user/add/ HTTP/1.1" 404 2314
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 1343
+Not Found: /myapp2/static/css/style.css
+"GET /myapp2/static/css/style.css HTTP/1.1" 404 2987
+Not Found: /user/add/
+"GET /user/add/ HTTP/1.1" 404 2314
+Not Found: /user/add/
+"GET /user/add/ HTTP/1.1" 404 2314
+"GET /myapp2/user/add/ HTTP/1.1" 200 1429
+Not Found: /myapp2/user/add/static/css/style.css
+"GET /myapp2/user/add/static/css/style.css HTTP/1.1" 404 3014
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /user/add/
+"GET /user/add/ HTTP/1.1" 404 2314
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 6363)
+"GET /myapp2/ HTTP/1.1" 200 1343
+Not Found: /myapp2/static/css/style.css
+"GET /myapp2/static/css/style.css HTTP/1.1" 404 3008
+Not Found: /user/add/
+"GET /user/add/ HTTP/1.1" 404 2314
+"GET /myapp2/ HTTP/1.1" 200 1357
+Not Found: /myapp2/static/css/style.css
+"GET /myapp2/static/css/style.css HTTP/1.1" 404 3008
+"GET /myapp2/ HTTP/1.1" 200 1346
+Not Found: /myapp2/style.css
+"GET /myapp2/style.css HTTP/1.1" 404 2975
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /static/css/style.css HTTP/1.1" 304 0
+Not Found: /myapp2/user/add
+"GET /myapp2/user/add HTTP/1.1" 404 2972
+Not Found: /myapp2/user/add
+"GET /myapp2/user/add HTTP/1.1" 404 2972
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 1344
+Not Found: /user/add
+- Broken pipe from ('127.0.0.1', 6370)
+Not Found: /user/add/
+"GET /user/add/ HTTP/1.1" 404 2314
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/product/add HTTP/1.1" 301 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 1878
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/user/add HTTP/1.1" 301 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 1444
+"GET /myapp2/product/add/ HTTP/1.1" 200 1878
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/product/add/ HTTP/1.1" 200 1878
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /myapp2/ HTTP/1.1" 200 1358
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 6390)
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /static/css/style.css HTTP/1.1" 200 2128
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /static/css/style.css HTTP/1.1" 200 2172
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /static/css/style.css HTTP/1.1" 200 2172
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /static/css/style.css HTTP/1.1" 200 2172
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/ HTTP/1.1" 200 1358
+"GET /static/css/style.css HTTP/1.1" 200 2166
+"GET /myapp2/user/add/ HTTP/1.1" 200 1444
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 1467
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 1469
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 1878
+"GET /myapp2/user/add/ HTTP/1.1" 200 1470
+"GET /static/css/style.css HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 1878
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 1470
+"GET /myapp2/user/add/ HTTP/1.1" 200 1470
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 1878
+"GET /myapp2/user/add/ HTTP/1.1" 200 1470
+"GET /myapp2/user/add/ HTTP/1.1" 200 1444
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 1878
+"GET /myapp2/user/add/ HTTP/1.1" 200 1444
+- Broken pipe from ('127.0.0.1', 6402)
+"GET /myapp2/user/add/ HTTP/1.1" 200 1470
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 1497
+"GET /myapp2/user/add/ HTTP/1.1" 200 1460
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 1458
+"GET /myapp2/user/add/ HTTP/1.1" 200 1458
+"GET /myapp2/user/add/ HTTP/1.1" 200 1478
+"GET /static/css/style.css HTTP/1.1" 200 2321
+"GET /myapp2/user/add/ HTTP/1.1" 200 1478
+"GET /static/css/style.css HTTP/1.1" 200 2321
+"GET /myapp2/user/add/ HTTP/1.1" 200 1478
+"GET /static/css/style.css HTTP/1.1" 200 2322
+"GET /myapp2/user/add/ HTTP/1.1" 200 1478
+"GET /static/css/style.css HTTP/1.1" 200 2320
+"GET /myapp2/user/add/ HTTP/1.1" 200 1478
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 1911
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 1911
+"GET /static/css/style.css HTTP/1.1" 200 2321
+"GET /myapp2/product/add/ HTTP/1.1" 200 1911
+"GET /static/css/style.css HTTP/1.1" 200 2321
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6456)
+"GET /myapp2/user/add/ HTTP/1.1" 200 1620
+"GET /myapp2/user/add/ HTTP/1.1" 200 1767
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2058
+"GET /myapp2/user/add/ HTTP/1.1" 200 1767
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 1767
+"GET /myapp2/product/add/ HTTP/1.1" 200 2058
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 1912
+"GET /static/css/style.css HTTP/1.1" 200 2321
+"GET /myapp2/product/add/ HTTP/1.1" 200 1912
+"GET /myapp2/user/add/ HTTP/1.1" 200 1638
+"GET /myapp2/product/add/ HTTP/1.1" 200 1912
+"GET /myapp2/user/add/ HTTP/1.1" 200 1638
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 1638
+"GET /myapp2/product/add/ HTTP/1.1" 200 1912
+"GET /myapp2/user/add/ HTTP/1.1" 200 1638
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 6509)
+"GET /myapp2/ HTTP/1.1" 200 1392
+"GET /myapp2/user/add/ HTTP/1.1" 200 1638
+"GET /static/css/style.css HTTP/1.1" 200 2358
+"GET /myapp2/product/add/ HTTP/1.1" 200 1912
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 1638
+"GET /static/css/style.css HTTP/1.1" 304 0
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 2112
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 1638
+"GET /static/css/style.css HTTP/1.1" 200 2404
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6540)
+"GET /myapp2/user/add/ HTTP/1.1" 200 1638
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2112
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2112
+"GET /static/css/style.css HTTP/1.1" 200 2383
+"GET /myapp2/product/add/ HTTP/1.1" 200 2112
+"GET /static/css/style.css HTTP/1.1" 200 2397
+"GET /myapp2/product/add/ HTTP/1.1" 200 2112
+"GET /static/css/style.css HTTP/1.1" 200 2404
+"GET /myapp2/product/add/ HTTP/1.1" 200 2112
+"GET /static/css/style.css HTTP/1.1" 304 0
+C:\Auto_site_practic_gb\myproject\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 6643)
+"GET /myapp2/ HTTP/1.1" 200 1515
+"GET /static/css/style.css HTTP/1.1" 200 2404
+"GET /myapp2/ HTTP/1.1" 200 1512
+"GET /myapp2/order/add HTTP/1.1" 301 0
+"GET /myapp2/order/add/ HTTP/1.1" 200 1033
+"GET /myapp2/product/add/ HTTP/1.1" 200 2108
+"GET /myapp2/user/add/ HTTP/1.1" 200 1635
+"GET /myapp2/order/add/ HTTP/1.1" 200 1033
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 1630
+"GET /myapp2/order/add/ HTTP/1.1" 200 1025
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 1507
+"GET /myapp2/order/add/ HTTP/1.1" 200 1025
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 5398
+"GET /static/css/style.css HTTP/1.1" 304 0
+Internal Server Error: /myapp2/order/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 72, in order_form
+    qunt = form.products.queryset(Product.objects.get('price'))
+AttributeError: 'OrderForm' object has no attribute 'products'
+"POST /myapp2/order/add/ HTTP/1.1" 500 66836
+C:\Auto_site_practic_gb\myproject\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 5398
+Internal Server Error: /myapp2/order/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 72, in order_form
+    print(form.cleaned_data)
+AttributeError: 'OrderForm' object has no attribute 'cleaned_data'
+"POST /myapp2/order/add/ HTTP/1.1" 500 66787
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 5398
+Internal Server Error: /myapp2/order/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 72, in order_form
+    print(form.products)
+AttributeError: 'OrderForm' object has no attribute 'products'
+"POST /myapp2/order/add/ HTTP/1.1" 500 66763
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 5398
+Internal Server Error: /myapp2/order/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 72, in order_form
+    print(form.products.bound_data())
+AttributeError: 'OrderForm' object has no attribute 'products'
+"POST /myapp2/order/add/ HTTP/1.1" 500 66789
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 5398
+Internal Server Error: /myapp2/order/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 72, in order_form
+    print(form.products['price'])
+AttributeError: 'OrderForm' object has no attribute 'products'
+"POST /myapp2/order/add/ HTTP/1.1" 500 66801
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 5398
+Internal Server Error: /myapp2/order/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 79, in order_form
+    order = Order(customer=customer, products=products, quantity_prod=quantity_prod,total_price=total_price)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 564, in __init__
+    _setattr(self, prop, value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 659, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use products.set() instead.
+"POST /myapp2/order/add/ HTTP/1.1" 500 78758
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 7011)
+"GET /myapp2/ HTTP/1.1" 200 1507
+"GET /static/css/style.css HTTP/1.1" 200 2404
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 7013)
+Not Found: /order/add
+"GET /order/add HTTP/1.1" 404 2314
+"GET /myapp2/product/add/ HTTP/1.1" 200 2103
+"GET /myapp2/order/add/ HTTP/1.1" 200 5398
+"POST /myapp2/order/add/ HTTP/1.1" 200 5462
+"POST /myapp2/order/add/ HTTP/1.1" 200 5462
+"POST /myapp2/order/add/ HTTP/1.1" 200 5460
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/order/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 72, in order_form
+    p = form.products.bound_data("price")
+AttributeError: 'OrderForm' object has no attribute 'products'
+"POST /myapp2/order/add/ HTTP/1.1" 500 66789
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /myapp2/order/add/ HTTP/1.1" 200 5459
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 1507
+"GET /static/css/style.css HTTP/1.1" 200 2404
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 7120)
+"GET /myapp2/order/add/ HTTP/1.1" 200 5549
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 1507
+"GET /static/css/style.css HTTP/1.1" 200 2404
+Not Found: /order/add
+"GET /order/add HTTP/1.1" 404 2314
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 7245)
+"GET /myapp2/order/add/ HTTP/1.1" 200 5390
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 5389
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 2103
+"GET /myapp2/user/add/ HTTP/1.1" 200 1630
+"GET /myapp2/order/add/ HTTP/1.1" 200 5391
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 1507
+"GET /static/css/style.css HTTP/1.1" 200 2404
+"GET /myapp2/order/add/ HTTP/1.1" 200 5391
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 7115)
+"POST /myapp2/order/add/ HTTP/1.1" 200 5432
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /myapp2/order/add/ HTTP/1.1" 200 5441
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /myapp2/order/add/ HTTP/1.1" 200 5442
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /myapp2/order/add/ HTTP/1.1" 200 5442
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /myapp2/order/add/ HTTP/1.1" 200 5435
+"POST /myapp2/order/add/ HTTP/1.1" 200 5443
+"POST /myapp2/order/add/ HTTP/1.1" 200 5443
+"POST /myapp2/order/add/ HTTP/1.1" 200 5442
+"POST /myapp2/order/add/ HTTP/1.1" 200 5442
+"POST /myapp2/order/add/ HTTP/1.1" 200 5433
+"POST /myapp2/order/add/ HTTP/1.1" 200 5442
+"POST /myapp2/order/add/ HTTP/1.1" 200 5444
+"POST /myapp2/order/add/ HTTP/1.1" 200 5445
+"POST /myapp2/order/add/ HTTP/1.1" 200 5435
+"POST /myapp2/order/add/ HTTP/1.1" 200 5442
+"GET /myapp2/user/add/ HTTP/1.1" 200 1733
+"GET /myapp2/product/add/ HTTP/1.1" 200 2162
+Not Found: /myapp2/index
+"GET /myapp2/index HTTP/1.1" 404 3125
+"GET /myapp2/user/add/ HTTP/1.1" 200 1684
+"GET /myapp2/ HTTP/1.1" 200 1561
+"GET /myapp2/order/add/ HTTP/1.1" 200 5311
+"GET /myapp2/product/add/ HTTP/1.1" 200 2023
+- Broken pipe from ('127.0.0.1', 7180)
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 7194)
+"GET /myapp2/ HTTP/1.1" 200 1427
+"GET /myapp2/ HTTP/1.1" 200 1005
+"GET /myapp2/ HTTP/1.1" 200 1005
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 1550
+"GET /myapp2/ HTTP/1.1" 200 1005
+"GET /myapp2/order/add/ HTTP/1.1" 200 5311
+"GET /myapp2/ HTTP/1.1" 200 1005
+"GET /myapp2/user/add/ HTTP/1.1" 200 1550
+"GET /myapp2/product/add/ HTTP/1.1" 200 2023
+"GET /myapp2/order/add/ HTTP/1.1" 200 5311
+"GET /myapp2/ HTTP/1.1" 200 1005
+"GET /myapp2/ HTTP/1.1" 200 1079
+"GET /myapp2/ HTTP/1.1" 200 1077
+"GET /myapp2/ HTTP/1.1" 200 1079
+"GET /myapp2/ HTTP/1.1" 200 1097
+"GET /myapp2/ HTTP/1.1" 200 1097
+"GET /myapp2/ HTTP/1.1" 200 1097
+"GET /myapp2/ HTTP/1.1" 200 1097
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 1097
+"GET /myapp2/ HTTP/1.1" 200 1097
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 301 0
+"GET /myapp2/ HTTP/1.1" 200 1097
+"GET /static/css/style.css HTTP/1.1" 200 2501
+"GET /myapp2/user/add HTTP/1.1" 301 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 1642
+"GET /myapp2/order/add HTTP/1.1" 301 0
+"GET /myapp2/order/add/ HTTP/1.1" 200 5403
+"POST /myapp2/order/add/ HTTP/1.1" 200 5457
+"POST /myapp2/order/add/ HTTP/1.1" 200 5457
+"POST /myapp2/order/add/ HTTP/1.1" 200 5457
+"GET /myapp2/ HTTP/1.1" 200 1097
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 10, in index
+    return render(request, 'myapp2/index.html', context=products)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than QuerySet.
+"GET /myapp2/ HTTP/1.1" 500 87334
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 7530)
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 10, in index
+    return render(request, 'myapp2/index.html', **products)
+TypeError: django.shortcuts.render() argument after ** must be a mapping, not QuerySet
+"GET /myapp2/ HTTP/1.1" 500 66445
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 7533)
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 7541)
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 11, in index
+    'name': products.name,
+AttributeError: 'QuerySet' object has no attribute 'name'
+"GET /myapp2/ HTTP/1.1" 500 66435
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 7543)
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 11, in index
+    'name': products.name,
+AttributeError: 'QuerySet' object has no attribute 'name'
+"GET /myapp2/ HTTP/1.1" 500 66603
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 8032)
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 16, in index
+    return render(request, 'myapp2/index.html', products)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than QuerySet.
+"GET /myapp2/ HTTP/1.1" 500 87400
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 9538)
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 17, in index
+    return render(request, 'myapp2/index.html', products)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than QuerySet.
+"GET /myapp2/ HTTP/1.1" 500 87384
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13540
+"GET /static/css/style.css HTTP/1.1" 200 2501
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 10, in index
+    print(products.name)
+AttributeError: 'QuerySet' object has no attribute 'name'
+"GET /myapp2/ HTTP/1.1" 500 66385
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 10, in index
+    print(products["name"])
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 420, in __getitem__
+    raise TypeError(
+TypeError: QuerySet indices must be integers or slices, not str.
+"GET /myapp2/ HTTP/1.1" 500 71246
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13540
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13540
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13540
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 13, in index
+    for i in len_list:
+TypeError: 'int' object is not iterable
+"GET /myapp2/ HTTP/1.1" 500 66529
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13540
+"GET /myapp2/ HTTP/1.1" 200 5353
+"GET /myapp2/ HTTP/1.1" 200 5518
+"GET /myapp2/ HTTP/1.1" 200 5320
+"GET /myapp2/ HTTP/1.1" 200 4915
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 5403
+"GET /static/css/style.css HTTP/1.1" 200 2501
+"GET /myapp2/ HTTP/1.1" 200 4915
+"GET /myapp2/user/add/ HTTP/1.1" 200 1642
+"GET /myapp2/ HTTP/1.1" 200 4915
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 1702
+"GET /myapp2/orders/ HTTP/1.1" 200 989
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/orders/ HTTP/1.1" 200 4325
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/orders/ HTTP/1.1" 200 4325
+"GET /myapp2/orders/ HTTP/1.1" 200 4369
+"GET /myapp2/ HTTP/1.1" 200 4975
+"GET /myapp2/orders/ HTTP/1.1" 200 4369
+"GET /myapp2/ HTTP/1.1" 200 4975
+"GET /myapp2/orders/ HTTP/1.1" 200 4369
+"GET /myapp2/orders/ HTTP/1.1" 200 3291
+"GET /myapp2/orders/ HTTP/1.1" 200 3775
+"GET /myapp2/orders/ HTTP/1.1" 200 4488
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 1765
+"GET /myapp2/ HTTP/1.1" 200 5038
+"GET /myapp2/orders/ HTTP/1.1" 200 4587
+"GET /myapp2/orders1/ HTTP/1.1" 200 3948
+"GET /myapp2/orders/ HTTP/1.1" 200 4587
+"GET /myapp2/orders1/ HTTP/1.1" 200 3948
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/orders/ HTTP/1.1" 200 4587
+"GET /myapp2/orders1/ HTTP/1.1" 200 3895
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/orders/ HTTP/1.1" 200 4587
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 2781)
+"GET /myapp2/orders1/ HTTP/1.1" 200 1079
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/orders1/ HTTP/1.1" 200 4551
+"GET /myapp2/orders/ HTTP/1.1" 200 4587
+"GET /myapp2/orders1/ HTTP/1.1" 200 4551
+"GET /myapp2/ HTTP/1.1" 200 5038
+"GET /myapp2/product/add/ HTTP/1.1" 200 2238
+"GET /myapp2/order/add/ HTTP/1.1" 200 5526
+"GET /myapp2/orders/ HTTP/1.1" 200 4587
+"GET /myapp2/orders1/ HTTP/1.1" 200 4551

@@ -1,6 +1,10 @@
 import datetime
-from .models import Category
+
+from django.utils.safestring import SafeString
+
+from .models import Category, User, Product, Order
 from django import forms
+
 
 # Пользовательская валидация данных с помощью
 # метода clean()
@@ -8,6 +12,15 @@ from django import forms
 # указать имя поля. Такой метод будет применяться для дополнительной проверки
 # поля на корректность.
 class UserForm(forms.Form):
+    def __init__(self, *args, **kwargs):
+        super(UserForm, self).__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            visible.field.widget.attrs['class'] = 'form-control'
+
+    # class on every div when I use {{ form.as_div }} on html template
+    def as_div(self):
+        return SafeString(super().as_div().replace("<div>", "<div class='form-group'>"))
+
     name = forms.CharField(max_length=50)
     email = forms.EmailField()
     t_number = forms.CharField(max_length=15)
@@ -28,24 +41,48 @@ class UserForm(forms.Form):
     #         raise forms.ValidationError('Используйте корпоративную почту')
     #     return email
 
+
 class CategoryForm(forms.Form):
     name = forms.CharField(max_length=50)
 
+
 class ProductForm(forms.Form):
+    def __init__(self, *args, **kwargs):
+        super(ProductForm, self).__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            visible.field.widget.attrs['class'] = 'form-control'
+
+    # class on every div when I use {{ form.as_div }} on html template
+    def as_div(self):
+        return SafeString(super().as_div().replace("<div>", "<div class='form-group'>"))
+
     name = forms.CharField(max_length=50)
-    category = forms.ModelChoiceField(label = u'категория', queryset = Category.objects.order_by('-name'))
+    category = forms.ModelChoiceField(label=u'категория', queryset=Category.objects.order_by('-name'))
     description = forms.CharField(max_length=15)
     price = forms.FloatField(min_value=12)
     quantity = forms.IntegerField(min_value=12)
 
-class ManyFieldsForm(forms.Form):
-    name = forms.CharField(max_length=50)
-    email = forms.EmailField()
-    age = forms.IntegerField(min_value=18)
-    height = forms.FloatField()
-    is_active = forms.BooleanField(required=False)
-    birthdate = forms.DateField(initial=datetime.date.today)
-    gender = forms.ChoiceField(choices=[('M', 'Male'), ('F', 'Female')])
+# class OrderForm(forms.Form):
+#     customer = forms.ModelChoiceField(label="client", queryset=User.objects.order_by('-name'))
+#     products = forms.ModelChoiceField(label="product", queryset=Product.objects.order_by('-name'))
+#     quantity_prod = forms.IntegerField(widget=forms.NumberInput(attrs={'class': 'form-control'}))
+
+class OrderForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args,**kwargs)
+        self.fields['customer'].empty_label = "not user"
+        self.fields['products'].empty_label = "not product"
+
+    class Meta:
+        model = Order
+        # fields = '__all__'
+        fields = ['customer', 'products', 'quantity_prod']
+        # widgets = {
+        #     'customer': forms.TextInput(attrs={"class": "form-control", "placeholder": "Имя" }),
+        #
+        #     'products': forms.TextInput(attrs={"class": "form-control", "placeholder": "Товар"}),
+        #     'quantity_prod': forms.IntegerField(attrs={"class": "form-control", "placeholder": "Количество"}),
+        # }
 
 
 class ManyFieldsFormWidget(forms.Form):

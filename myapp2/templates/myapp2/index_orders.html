@@ -2,22 +2,26 @@
 {% block content %}
 
 
-
+{% block title %}
+    {{title}}
+{% endblock %}
 
 <div class="welcome">
 
     <h1><strong>Welcome</strong> to our website !</h1>
     <p>We're looking forward to getting your answers so we can make sure our products and services are the best they
         can be!</p>
+    <link rel="stylesheet" href="">
 </div>
 <div class="question">
-    {% for product in products_lst %}
+    {% for product in orders %}
 
 
     <div class="answer">
-        <h4>{{ product.category }}</h4>
-    <h2>{{ product.price }}</h2>
-        <h3>{{ product.name }}</h3>
+        <h4>{{ product.customer.name }}</h4>
+        <h4>{{ product.products.name }}</h4>
+    <h4>Количество: {{ product.quantity_prod }}</h4>
+        <h3>{{ product.total_price }}</h3>
     </div>
 
 {% endfor %}

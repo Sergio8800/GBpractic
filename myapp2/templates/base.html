@@ -2,21 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
     <title>{% block title %}Формы{% endblock %}</title>
+
 </head>
 <body>
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/user/add">Add User</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/product/add">Add Product</a>
-                    </li>
+<header>
+    <div class="main-link">
+        <p><a href="/myapp2/">Main let's go</a></p>
 
-                </ul>
-{% block content %}
-Контент скоро появится...
-{% endblock %}
+    </div>
+    <ul>
+        <li><a href="/myapp2/">Main let's go</a></li>
+        <li><a href="/myapp2/user/add">Add User</a></li>
+        <li><a href="/myapp2/product/add">Add Product</a></li>
+        <li><a href="/myapp2/order/add">Add Order</a></li>
+        <li><a href="/myapp2/orders/">All of Order</a></li>
+        <li><a href="/myapp2/orders1/">Filtr of Order</a></li>
+
+    </ul>
+</header>
+
+<div class="content">
+    {% block content %}
+    Контент скоро появится...
+    {% endblock %}
+</div>
+
+
+<footer>
+    <h3>We are glad to welcome you to our website!</h3>
+</footer>
+
 
 </body>
 </html>
