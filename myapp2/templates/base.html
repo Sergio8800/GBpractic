@@ -1,8 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/css/style.css">
+<!--    <link rel="stylesheet" href="/static/myapp2/css/style.css">-->
+<!--    добавили статику в сэтингс и ввурху. все пути ищищтся отностильно папки стмтик-->
+    <link rel="stylesheet" href="{% static '/myapp2/css/style.css' %}">
     <title>{% block title %}Формы{% endblock %}</title>
 
 </head>
@@ -13,7 +16,7 @@
 
     </div>
     <ul>
-        <li><a href="/myapp2/">Main let's go</a></li>
+        <li><a href="{% url 'index_start' %}">Main let's go</a></li>
         <li><a href="/myapp2/user/add">Add User</a></li>
         <li><a href="/myapp2/product/add">Add Product</a></li>
         <li><a href="/myapp2/order/add">Add Order</a></li>

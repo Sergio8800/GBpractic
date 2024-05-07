@@ -21,10 +21,12 @@ class UserForm(forms.Form):
     def as_div(self):
         return SafeString(super().as_div().replace("<div>", "<div class='form-group'>"))
 
-    name = forms.CharField(max_length=50)
-    email = forms.EmailField()
-    t_number = forms.CharField(max_length=15)
-    adress = forms.CharField(max_length=150)
+    name = forms.CharField(max_length=50, label='Login', widget=forms.TextInput(
+        attrs={'class': 'form-control', 'placeholder': 'Введите имя пользователя'}))
+    email = forms.EmailField(label='E-mail',
+                             widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'user@mail.ru'}))
+    t_number = forms.CharField(max_length=15, label='phone namber')
+    adress = forms.CharField(max_length=150, label='adress', required=False)
 
     def clean_name(self):
         """Плохой пример. Подмена параметра min_length.
@@ -46,30 +48,21 @@ class CategoryForm(forms.Form):
     name = forms.CharField(max_length=50)
 
 
-class ProductForm(forms.Form):
+class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
-        super(ProductForm, self).__init__(*args, **kwargs)
-        for visible in self.visible_fields():
-            visible.field.widget.attrs['class'] = 'form-control'
+        super().__init__(*args, **kwargs)
+        self.fields['category'].empty_label = "not category"
 
-    # class on every div when I use {{ form.as_div }} on html template
-    def as_div(self):
-        return SafeString(super().as_div().replace("<div>", "<div class='form-group'>"))
+    class Meta:
+        model = Product
+        fields = '__all__'
+        # fields = ['name', 'category', 'description']
 
-    name = forms.CharField(max_length=50)
-    category = forms.ModelChoiceField(label=u'категория', queryset=Category.objects.order_by('-name'))
-    description = forms.CharField(max_length=15)
-    price = forms.FloatField(min_value=12)
-    quantity = forms.IntegerField(min_value=12)
 
-# class OrderForm(forms.Form):
-#     customer = forms.ModelChoiceField(label="client", queryset=User.objects.order_by('-name'))
-#     products = forms.ModelChoiceField(label="product", queryset=Product.objects.order_by('-name'))
-#     quantity_prod = forms.IntegerField(widget=forms.NumberInput(attrs={'class': 'form-control'}))
 
 class OrderForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args,**kwargs)
+        super().__init__(*args, **kwargs)
         self.fields['customer'].empty_label = "not user"
         self.fields['products'].empty_label = "not product"
 

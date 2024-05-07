@@ -11,13 +11,14 @@
         can be!</p>
 </div>
 <div class="question">
-    {% for product in products_lst %}
+    {% for product in products %}
 
 
     <div class="answer">
         <h4>{{ product.category }}</h4>
     <h2>{{ product.price }}</h2>
         <h3>{{ product.name }}</h3>
+        <p class="link-read-post"><a href="{{ product.get_absolute_url }}">Редактировать</a></p>
     </div>
 
 {% endfor %}

@@ -3,10 +3,24 @@
 {% block content %}
 
 <h3>{{ message }}</h3>
-<form action="" method="post">
-{% csrf_token %}
-{{ form.as_div }}
-<input type="submit" value="Отправить">
+<form action="{% url 'user_form' %}" method="post">
+    {% csrf_token %}
+    <p ><label for="{{ form.name.id_for_label}}">{{form.name.label}}</label>
+        {{ form.name }}</p>
+    <div>{{form.name.errors}}</div>
+    <p><label for="{{ form.email.id_for_label}}">{{form.email.label}}</label>
+        {{ form.email }}</p>
+    <div>{{form.email.errors}}</div>
+    <p><label for="{{ form.t_number.id_for_label}}">{{form.t_number.label}}</label>
+        {{ form.t_number }}</p>
+    <div>{{form.t_number.errors}}</div>
+    <p><label for="{{ form.adress.id_for_label}}">{{form.adress.label}}</label>
+        {{ form.adress }}</p>
+    <div>{{form.adress.errors}}</div>
+
+<!--    for f_fild in form - работа по полям формы, но тогда один стиль для каждого поля-->
+
+    <input type="submit" value="Отправить">
 </form>
 {% endblock %}
 

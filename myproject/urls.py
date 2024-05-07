@@ -24,4 +24,5 @@ urlpatterns = [
     # path('', include('myapp.urls')),
     path('', redirect_list),
     path('myapp2/', include('myapp2.urls')),
+    path('women/', include('women.urls')),
 ]

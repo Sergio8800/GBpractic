@@ -21,7 +21,10 @@
         <h4>{{ product.products.name }}</h4>
     <h4>Количество: {{ product.quantity_prod }}</h4>
         <h3>{{ product.total_price }}</h3>
+        <div><p>{{ product.date_ordered|date:"D d M Y" }}"</p></div>
     </div>
+<!--    filter "|date:"D d M Y" for date printer on site -->
+
 
 {% endfor %}
 </div>
