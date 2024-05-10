@@ -3076,3 +3076,2030 @@ Watching for file changes with StatReloader
 Not Found: /favicon.ico
 - Broken pipe from ('127.0.0.1', 8126)
 "GET /myapp2/product/3/ HTTP/1.1" 200 45
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 8753
+"GET /static/myapp2/css/style.css HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2426
+"GET /admin/ HTTP/1.1" 200 7073
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/myapp2/category/ HTTP/1.1" 200 10733
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/myapp2/user/ HTTP/1.1" 200 16575
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 29935
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+C:\Auto_site_practic_gb\myproject\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30028
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 14082)
+"POST /admin/myapp2/product/ HTTP/1.1" 302 0
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30221
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30028
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/myapp2/product/ HTTP/1.1" 302 0
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30221
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/myapp2/product/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 2018, in changelist_view
+    response = self.response_action(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1650, in response_action
+    response = func(self, request, queryset)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\admin.py", line 8, in reset_quantity
+    queryset.update(quantity=0)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1253, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1990, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: database is locked
+"POST /admin/myapp2/product/ HTTP/1.1" 500 173957
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30010
+"POST /admin/myapp2/product/ HTTP/1.1" 302 0
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30010
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+C:\Auto_site_practic_gb\myproject\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30094
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/myapp2/product/ HTTP/1.1" 302 0
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30096
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+C:\Auto_site_practic_gb\myproject\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/myapp2/category/ HTTP/1.1" 200 10733
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/ HTTP/1.1" 200 5973
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/myapp2/product/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1985, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 864, in get_changelist_instance
+    return ChangeList(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 577, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1187, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+"GET /admin/myapp2/product/?q=GSM HTTP/1.1" 500 200527
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/myapp2/product/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1985, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 864, in get_changelist_instance
+    return ChangeList(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 577, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1187, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+"GET /admin/myapp2/product/?q=GSM HTTP/1.1" 500 200527
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+Internal Server Error: /admin/myapp2/product/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1985, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 864, in get_changelist_instance
+    return ChangeList(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 577, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1187, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+"GET /admin/myapp2/product/?q=1 HTTP/1.1" 500 200421
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 14115)
+Internal Server Error: /admin/myapp2/product/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1985, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 864, in get_changelist_instance
+    return ChangeList(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 577, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1187, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+"GET /admin/myapp2/product/?q=GSM HTTP/1.1" 500 200527
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+C:\Auto_site_practic_gb\myproject\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/myapp2/product/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1985, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 864, in get_changelist_instance
+    return ChangeList(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 577, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1187, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+"GET /admin/myapp2/product/?q=GSM HTTP/1.1" 500 200527
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/myapp2/product/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1985, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 864, in get_changelist_instance
+    return ChangeList(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 577, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1187, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+"GET /admin/myapp2/product/?q=GSM HTTP/1.1" 500 200527
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 14174)
+"GET /myapp2/ HTTP/1.1" 200 8744
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7073
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/myapp2/product/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1985, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 864, in get_changelist_instance
+    return ChangeList(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 577, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1187, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+"GET /admin/myapp2/product/?q=GSM HTTP/1.1" 500 200527
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+Internal Server Error: /admin/myapp2/product/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1985, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 864, in get_changelist_instance
+    return ChangeList(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\views\main.py", line 577, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\admin\options.py", line 1187, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+"GET /admin/myapp2/product/?q=14 HTTP/1.1" 500 200474
+"GET /admin/myapp2/product/ HTTP/1.1" 200 30712
+C:\Auto_site_practic_gb\myproject\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/?q=GSM HTTP/1.1" 200 14969
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /myapp2/ HTTP/1.1" 200 8744
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"GET /myapp2/ HTTP/1.1" 200 8969
+"GET /myapp2/order/add/ HTTP/1.1" 200 6026
+"GET /static/myapp2/css/style.css HTTP/1.1" 304 0
+"GET /myapp2/ HTTP/1.1" 200 9785
+"GET /myapp2/product/23/ HTTP/1.1" 200 46
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'product.image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 30, in index
+    return render(request, 'myapp2/index.html',  context=context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 21: 'product.image', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /myapp2/ HTTP/1.1" 500 187862
+"GET /myapp2/user/add/ HTTP/1.1" 200 2192
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'product.image.url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 30, in index
+    return render(request, 'myapp2/index.html',  context=context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 21: 'product.image.url', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"GET /myapp2/ HTTP/1.1" 500 187937
+"GET /myapp2/user/add/ HTTP/1.1" 200 2192
+"GET /myapp2/ HTTP/1.1" 200 10905
+"GET /myapp2/ HTTP/1.1" 200 10905
+"GET /myapp2/product/23/ HTTP/1.1" 200 46
+"GET /myapp2/ HTTP/1.1" 200 11231
+Not Found: /media/1
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/0.
+"GET /media/0. HTTP/1.1" 404 2417
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"GET /myapp2/ HTTP/1.1" 200 11231
+Not Found: /media/1
+Not Found: /media/0.
+"GET /media/1 HTTP/1.1" 404 2414
+"GET /media/0. HTTP/1.1" 404 2417
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+"GET /myapp2/ HTTP/1.1" 200 10986
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+Not Found: /media/0.
+"GET /media/0. HTTP/1.1" 404 2417
+Not Found: /media/1
+"GET /media/1 HTTP/1.1" 404 2414
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 11231
+Not Found: /media/1
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+Not Found: /media/0.
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+"GET /media/0. HTTP/1.1" 404 2417
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 1346)
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 11231
+Not Found: /media/1
+Not Found: /media/0.
+"GET /media/1 HTTP/1.1" 404 2414
+"GET /media/0. HTTP/1.1" 404 2417
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 1352)
+"GET /myapp2/ HTTP/1.1" 200 12036
+Not Found: /media//media/1
+Not Found: /media//media/0.
+Not Found: /media//media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media//media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2675
+"GET /media//media/1 HTTP/1.1" 404 2435
+"GET /media//media/0. HTTP/1.1" 404 2438
+"GET /myapp2/ HTTP/1.1" 200 11791
+Not Found: /media/1
+Not Found: /media/0.
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/0. HTTP/1.1" 404 2417
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+C:\Auto_site_practic_gb\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 11791
+Not Found: /media/1
+Not Found: /media/0.
+"GET /media/0. HTTP/1.1" 404 2417
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+"GET /myapp2/ HTTP/1.1" 200 12036
+Not Found: /media//media/1
+Not Found: /media//media/0.
+Not Found: /media//media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media//media/1 HTTP/1.1" 404 2435
+"GET /media//media/0. HTTP/1.1" 404 2438
+"GET /media//media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2675
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 11791
+Not Found: /media/1
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+Not Found: /media/0.
+"GET /media/1 HTTP/1.1" 404 2414
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+"GET /media/0. HTTP/1.1" 404 2417
+"GET /myapp2/ HTTP/1.1" 200 14475
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/ HTTP/1.1" 200 11791
+Not Found: /media/1
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/0.
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/0. HTTP/1.1" 404 2417
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+C:\Auto_site_practic_gb\myproject\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 11791
+Not Found: /media/1
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/0.
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/0. HTTP/1.1" 404 2417
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"GET /myapp2/ HTTP/1.1" 200 12143
+Not Found: /media/1
+Not Found: /media/0.
+"GET /media/1 HTTP/1.1" 404 2414
+"GET /media/0. HTTP/1.1" 404 2417
+Not Found: /media/photos/2024/05/09/mono5.jpg
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/photos/2024/05/09/mono5.jpg HTTP/1.1" 404 2492
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+C:\Auto_site_practic_gb\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 12143
+Not Found: /media/1
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/photos/2024/05/09/mono5.jpg
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+"GET /media/photos/2024/05/09/mono5.jpg HTTP/1.1" 404 2492
+Not Found: /media/0.
+"GET /media/0. HTTP/1.1" 404 2417
+C:\Auto_site_practic_gb\myproject\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 12143
+Not Found: /media/1
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/photos/2024/05/09/mono5.jpg
+Not Found: /media/0.
+"GET /media/photos/2024/05/09/mono5.jpg HTTP/1.1" 404 2492
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+"GET /media/0. HTTP/1.1" 404 2417
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"GET /myapp2/ HTTP/1.1" 200 12456
+Not Found: /media/1
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+Not Found: /media/0.
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+"GET /media/1 HTTP/1.1" 404 2414
+"GET /media/0. HTTP/1.1" 404 2417
+Not Found: /media/photos/2024/05/09/mono5.jpg
+"GET /media/photos/2024/05/09/mono5.jpg HTTP/1.1" 404 2492
+Not Found: /media/mono4.jpg
+"GET /media/mono4.jpg HTTP/1.1" 404 2438
+C:\Auto_site_practic_gb\myproject\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"GET /myapp2/ HTTP/1.1" 200 12809
+Not Found: /media/1
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/0.
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/0. HTTP/1.1" 404 2417
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+Not Found: /media/photo/2024/05/09/mono1.jpg
+Not Found: /media/photos/2024/05/09/mono5.jpg
+"GET /media/photo/2024/05/09/mono1.jpg HTTP/1.1" 404 2489
+"GET /media/photos/2024/05/09/mono5.jpg HTTP/1.1" 404 2492
+Not Found: /media/mono4.jpg
+"GET /media/mono4.jpg HTTP/1.1" 404 2438
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 12619
+Not Found: /media/1
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+Not Found: /media/0.
+Not Found: /media/photo/2024/05/09/mono1.jpg
+Not Found: /media/photos/2024/05/09/mono5.jpg
+"GET /media/0. HTTP/1.1" 404 2417
+Not Found: /media/mono4.jpg
+"GET /media/photo/2024/05/09/mono1.jpg HTTP/1.1" 404 2489
+"GET /media/photos/2024/05/09/mono5.jpg HTTP/1.1" 404 2492
+"GET /media/mono4.jpg HTTP/1.1" 404 2438
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 1612)
+"GET /myapp2/ HTTP/1.1" 200 12391
+Not Found: /media/mono4.jpg
+Not Found: /media/0.
+Not Found: /media/photos/2024/05/09/mono5.jpg
+"GET /media/mono4.jpg HTTP/1.1" 404 2438
+Not Found: /media/1
+"GET /media/0. HTTP/1.1" 404 2417
+Not Found: /media/photo/2024/05/09/mono1.jpg
+"GET /media/photo/2024/05/09/mono1.jpg HTTP/1.1" 404 2489
+"GET /media/photos/2024/05/09/mono5.jpg HTTP/1.1" 404 2492
+"GET /media/1 HTTP/1.1" 404 2414
+Not Found: /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg
+"GET /media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 404 2654
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2426
+"GET /myapp2/ HTTP/1.1" 200 13201
+Not Found: /media/photo/2024/05/09/mono1.jpg
+"GET /media/photo/2024/05/09/mono1.jpg HTTP/1.1" 404 2489
+"GET /myapp2/ HTTP/1.1" 200 13163
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+"GET /myapp2/ HTTP/1.1" 200 12897
+"GET /myapp2/ HTTP/1.1" 200 12353
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/1 HTTP/1.1" 404 4071
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/0. HTTP/1.1" 404 4074
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 11909
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/1 HTTP/1.1" 404 4071
+"GET /myapp2/media/0. HTTP/1.1" 404 4074
+"GET /myapp2/product/37/ HTTP/1.1" 200 2475
+"GET /myapp2/product/34/ HTTP/1.1" 200 2475
+"GET /myapp2/product/34/ HTTP/1.1" 200 2475
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/30/ HTTP/1.1" 200 2475
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/29/ HTTP/1.1" 200 2475
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/30/ HTTP/1.1" 200 2475
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/29/ HTTP/1.1" 200 2475
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 2192
+"GET /myapp2/ HTTP/1.1" 200 11909
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4275
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4278
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+Internal Server Error: /myapp2/product/2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 112, in product_form_update
+    print(form)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 54, in render
+    context = context or self.get_context()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 225, in get_context
+    top_errors = self.non_field_errors().copy()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 252, in non_field_errors
+    return self.errors.get(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 334, in _clean_fields
+    value = bf.initial if field.disabled else bf.data
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\boundfield.py", line 136, in data
+    return self.form._widget_data_value(self.field.widget, self.html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 216, in _widget_data_value
+    return widget.value_from_datadict(self.data, self.files, html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\widgets.py", line 295, in value_from_datadict
+    return data.get(name)
+AttributeError: 'Product' object has no attribute 'get'
+"GET /myapp2/product/2/ HTTP/1.1" 500 101272
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/product/1/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 114, in product_form_update
+    form.cleaned_data['name'] = prod.name
+AttributeError: 'ProductForm' object has no attribute 'cleaned_data'
+"GET /myapp2/product/1/ HTTP/1.1" 500 66311
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/product/1/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 114, in product_form_update
+    form['name'] = prod.name
+TypeError: 'ProductForm' object does not support item assignment
+"GET /myapp2/product/1/ HTTP/1.1" 500 66154
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 11909
+"GET /static/myapp2/css/style.css HTTP/1.1" 200 2579
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/1 HTTP/1.1" 404 4275
+"GET /myapp2/media/0. HTTP/1.1" 404 4278
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2426
+Internal Server Error: /myapp2/product/2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 114, in product_form_update
+    form['name'] = prod.name
+TypeError: 'ProductForm' object does not support item assignment
+"GET /myapp2/product/2/ HTTP/1.1" 500 66145
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/product/3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 115, in product_form_update
+    form['name'] = prod.name
+TypeError: 'ProductForm' object does not support item assignment
+"GET /myapp2/product/3/ HTTP/1.1" 500 66136
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/product/6/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 123, in product_form_update
+    return render(request, 'myapp2/product_form.html', {'form': form, 'message': message})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 909, in _resolve_lookup
+    current = current()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 99, in as_div
+    return self.render(self.template_name_div)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 54, in render
+    context = context or self.get_context()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 225, in get_context
+    top_errors = self.non_field_errors().copy()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 252, in non_field_errors
+    return self.errors.get(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 334, in _clean_fields
+    value = bf.initial if field.disabled else bf.data
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\boundfield.py", line 136, in data
+    return self.form._widget_data_value(self.field.widget, self.html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 216, in _widget_data_value
+    return widget.value_from_datadict(self.data, self.files, html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\widgets.py", line 295, in value_from_datadict
+    return data.get(name)
+AttributeError: 'Product' object has no attribute 'get'
+"GET /myapp2/product/6/ HTTP/1.1" 500 199902
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 2192
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+"GET /myapp2/ HTTP/1.1" 200 11909
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4275
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4278
+Internal Server Error: /myapp2/product/2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 123, in product_form_update
+    return render(request, 'myapp2/product_form.html', {'form': form, 'message': message})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 909, in _resolve_lookup
+    current = current()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 99, in as_div
+    return self.render(self.template_name_div)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\utils.py", line 54, in render
+    context = context or self.get_context()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 225, in get_context
+    top_errors = self.non_field_errors().copy()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 252, in non_field_errors
+    return self.errors.get(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 334, in _clean_fields
+    value = bf.initial if field.disabled else bf.data
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\boundfield.py", line 136, in data
+    return self.form._widget_data_value(self.field.widget, self.html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 216, in _widget_data_value
+    return widget.value_from_datadict(self.data, self.files, html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\widgets.py", line 295, in value_from_datadict
+    return data.get(name)
+AttributeError: 'Product' object has no attribute 'get'
+"GET /myapp2/product/2/ HTTP/1.1" 500 199862
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/5/ HTTP/1.1" 200 2591
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2475
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 12214
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4275
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4278
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/product/1/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 115, in product_form_update
+    return render(request, 'myapp2/product_form.html', {'form': form, 'message': message})
+UnboundLocalError: local variable 'message' referenced before assignment
+"GET /myapp2/product/1/ HTTP/1.1" 500 66222
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 10042)
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 10048)
+"GET /myapp2/ HTTP/1.1" 200 12214
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4275
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4278
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 10049)
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+Internal Server Error: /myapp2/product/1/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 115, in product_form_update
+    return render(request, 'myapp2/product_form.html', {'form': form, 'message': message})
+UnboundLocalError: local variable 'message' referenced before assignment
+"GET /myapp2/product/1/ HTTP/1.1" 500 66222
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/1/ HTTP/1.1" 200 2582
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+"GET /myapp2/ HTTP/1.1" 200 12505
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4275
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4278
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/1/ HTTP/1.1" 200 2582
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 15625
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4478
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4481
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 10167)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/1/ HTTP/1.1" 200 2580
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+"GET /myapp2/ HTTP/1.1" 200 15993
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+Not Found: /myapp2/media/1
+"GET /myapp2/media/0. HTTP/1.1" 404 4481
+"GET /myapp2/media/1 HTTP/1.1" 404 4478
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp2/order/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: deleteView() missing 1 required positional argument: 'product_id'
+"GET /myapp2/order/add/ HTTP/1.1" 500 61946
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 15993
+"GET /static/myapp2/css/style.css HTTP/1.1" 200 2579
+Not Found: /myapp2/media/1
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+"GET /myapp2/media/1 HTTP/1.1" 404 4478
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/0. HTTP/1.1" 404 4481
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2426
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/1/ HTTP/1.1" 200 2580
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+"GET /myapp2/ HTTP/1.1" 200 16362
+Not Found: /myapp2/media/1
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/1 HTTP/1.1" 404 4478
+"GET /myapp2/media/0. HTTP/1.1" 404 4481
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp2/order/add/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: deleteView() missing 1 required positional argument: 'product_id'
+"GET /myapp2/order/add/ HTTP/1.1" 500 61946
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 30, in index
+    return render(request, 'myapp2/index.html', context=context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'deleteView' with no arguments not found. 1 pattern(s) tried: ['myapp2/order/add/(?P<product_id>[0-9]+)/\\Z']
+"HEAD /myapp2/ HTTP/1.1" 500 0
+Not Found: /myapp2/order/add/
+"GET /myapp2/order/add/ HTTP/1.1" 404 4425
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 30, in index
+    return render(request, 'myapp2/index.html', context=context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'deleteView' with no arguments not found. 1 pattern(s) tried: ['myapp2/order/add/(?P<product_id>[0-9]+)/\\Z']
+"HEAD /myapp2/ HTTP/1.1" 500 0
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 30, in index
+    return render(request, 'myapp2/index.html', context=context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'deleteView' with no arguments not found. 1 pattern(s) tried: ['myapp2/product/del/(?P<product_id>[0-9]+)/\\Z']
+"GET /myapp2/ HTTP/1.1" 500 196753
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6105)
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 30, in index
+    return render(request, 'myapp2/index.html', context=context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'deleteView' with no arguments not found. 1 pattern(s) tried: ['myapp2/product/del/(?P<product_id>[0-9]+)/\\Z']
+"GET /myapp2/ HTTP/1.1" 500 196753
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6107)
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 30, in index
+    return render(request, 'myapp2/index.html', context=context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'deleteView' with no arguments not found. 1 pattern(s) tried: ['myapp2/product/del/(?P<product_id>[0-9]+)/\\Z']
+"GET /myapp2/ HTTP/1.1" 500 196753
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6267)
+"GET /myapp2/ HTTP/1.1" 200 16563
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4503
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4506
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/1/ HTTP/1.1" 200 1499
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/1/ HTTP/1.1" 200 1499
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp2/product/del/2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 133, in deleteView
+    return render(request, template_name, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_del' not found. 'product_del' is not a valid view function or pattern name.
+"GET /myapp2/product/del/2/ HTTP/1.1" 500 160099
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Not Found: /myapp2/order/add
+- Broken pipe from ('127.0.0.1', 6288)
+Not Found: /myapp2/order/add/
+"GET /myapp2/order/add/ HTTP/1.1" 404 4427
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/orders1/ HTTP/1.1" 200 1331
+"GET /myapp2/orders/ HTTP/1.1" 200 5096
+Not Found: /myapp2/order/add/
+"GET /myapp2/order/add/ HTTP/1.1" 404 4427
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 2192
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+"GET /myapp2/order/add/ HTTP/1.1" 200 6491
+"GET /myapp2/ HTTP/1.1" 200 16563
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/1/ HTTP/1.1" 200 2580
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp2/product/del/1/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 133, in deleteView
+    return render(request, template_name, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_del' not found. 'product_del' is not a valid view function or pattern name.
+"GET /myapp2/product/del/1/ HTTP/1.1" 500 159861
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/3/ HTTP/1.1" 200 2536
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6337)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp2/product/del/1/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 133, in deleteView
+    return render(request, template_name, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'deleteView' with no arguments not found. 1 pattern(s) tried: ['myapp2/product/del/(?P<product_id>[0-9]+)/\\Z']
+"GET /myapp2/product/del/1/ HTTP/1.1" 500 161823
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/2/ HTTP/1.1" 200 2571
+"GET /myapp2/ HTTP/1.1" 200 16563
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/1/ HTTP/1.1" 200 1756
+"POST /myapp2/product/del/1/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 16216
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6381)
+"GET /myapp2/ HTTP/1.1" 200 16216
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 16216
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/34/ HTTP/1.1" 200 2571
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+"GET /myapp2/ HTTP/1.1" 200 16593
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/34/ HTTP/1.1" 200 2571
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/30/ HTTP/1.1" 200 2591
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/21/ HTTP/1.1" 200 2591
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/user/add/ HTTP/1.1" 200 2192
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6547)
+"GET /myapp2/ HTTP/1.1" 200 16593
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/34/ HTTP/1.1" 200 2571
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+"GET /myapp2/ HTTP/1.1" 200 16989
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+Not Found: /myapp2/media/0.
+Not Found: /myapp2/media/1
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/26/ HTTP/1.1" 200 2591
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 17377
+Not Found: /myapp2/media/1
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2426
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/14/ HTTP/1.1" 200 2590
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 6597)
+"GET /myapp2/ HTTP/1.1" 200 17765
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+- Broken pipe from ('127.0.0.1', 6604)
+- Broken pipe from ('127.0.0.1', 6605)
+- Broken pipe from ('127.0.0.1', 6606)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 17810
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+Not Found: /myapp2/media/1
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2426
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/23/ HTTP/1.1" 200 2590
+"POST /myapp2/product/add/ HTTP/1.1" 302 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2493

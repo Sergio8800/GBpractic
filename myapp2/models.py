@@ -34,7 +34,7 @@ class Product(models.Model):
     price = models.DecimalField(default=999999.99, max_digits=8, decimal_places=2)
     quantity = models.PositiveSmallIntegerField(default=0)
     date_added = models.DateTimeField(auto_now_add=True)
-    image = models.ImageField(upload_to="photos/%Y/%m/%d", verbose_name="Photo")
+    image = models.ImageField(upload_to="photo/%Y/%m/%d", verbose_name="Photo")
 
     def get_absolute_url(self):
         return reverse('product', kwargs={'product_id': self.pk})
@@ -53,8 +53,12 @@ class Order(models.Model):
     date_ordered = models.DateTimeField(auto_now_add=True)
     total_price = models.DecimalField(max_digits=8, decimal_places=2)
 
+    def get_absolute_url(self):
+        return reverse('order', kwargs={'product_id': self.pk})
+
     def __str__(self):
         return f'Name is {self.customer.name} order is {self.products.name}'
+
 
     @property
     def get_summary(self):

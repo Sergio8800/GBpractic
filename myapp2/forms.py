@@ -52,6 +52,7 @@ class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['category'].empty_label = "not category"
+        self.fields['name'].initial = 'entre new'
 
     class Meta:
         model = Product

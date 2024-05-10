@@ -2,32 +2,20 @@ from datetime import date, timedelta
 
 from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from .forms import UserForm, CategoryForm, ProductForm, OrderForm
 from .models import User, Category, Product, Order
 
 
 def index(request):
-    products = Product.objects.all()
-    # len_list = len(products)
-    # # print(products[0].name)
-    # products_lst = []
-    # for i in range(len_list):
-    #     products_lst.append(products[i])
-
-    # context = {
-    #     'name': products.name,
-    #     'category': products.category,
-    #     'description': products.description,
-    #     'price': products.price,
-    # }
+    products = Product.objects.all().order_by('-date_added')
     context = {
         'title': "Orders of all clients",
         'products': products,
     }
 
-    return render(request, 'myapp2/index.html',  context=context)
+    return render(request, 'myapp2/index.html', context=context)
     # return render(request, 'myapp2/index.html', {"products_lst": products_lst})
 
 
@@ -39,6 +27,7 @@ def index_orders(request):
     }
 
     return render(request, 'myapp2/index_orders.html', context=context)
+
 
 def index_ord_filtr(request):
     today = date.today() - timedelta(days=1)
@@ -99,18 +88,41 @@ def product_form(request):
         message = "Input product"
     return render(request, 'myapp2/product_form.html', {'form': form, 'message': message})
 
+
 def product_form_update(request, product_id):
-    if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
-        message = "Error data"
-        if form.is_valid():
-            form.save()
-            return redirect(product_form)
-    else:
-        form = ProductForm(request.GET.get('product_id'))
-        message = "Input product"
+    # obj = Product.objects.get(pk=product_id)
+    intention = get_object_or_404(Product, pk=product_id)
+    form = ProductForm(request.POST or None, instance=intention)  # important
+    message = 'change data'
+    if form.is_valid():
+        # obj.name = form.cleaned_data['name']
+        # obj.category = form.cleaned_data['category']
+        # obj.description = form.cleaned_data['description']
+        # obj.price = form.cleaned_data['price']
+        # obj.quantity = form.cleaned_data['quantity']
+        # obj.image = form.cleaned_data['image']
+        # Product.objects.bulk_update(obj,
+        #                             ['name', 'category', 'description', 'price', 'quantity', 'image'])
+        name = form.cleaned_data['name']
+        category = form.cleaned_data['category']
+        description = form.cleaned_data['description']
+        price = form.cleaned_data['price']
+        quantity = form.cleaned_data['quantity']
+        image = form.cleaned_data['image']
+        intention.update(name=name, category=category, description=description, price=price, quantity=quantity, image=image)
+        message = ' data is change '
+
     return render(request, 'myapp2/product_form.html', {'form': form, 'message': message})
 
+
+def deleteView(request, product_id):
+    obj = Product.objects.get(pk=product_id)
+    if request.method == 'POST':
+        obj.delete()
+        return redirect('index_start')
+    template_name = 'myapp2/product_del.html'
+    context = {'obj': obj}
+    return render(request, template_name, context)
 
 
 def category_form(request):
@@ -147,6 +159,7 @@ def order_form(request):
         form = OrderForm()
         message = "Input Order"
     return render(request, 'myapp2/order_form.html', {'form': form, 'message': message})
+
 
 def show_order(request, product_id):
     # if request.method == 'POST':

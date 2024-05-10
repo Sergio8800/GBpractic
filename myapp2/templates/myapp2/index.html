@@ -18,7 +18,9 @@
         <h4>{{ product.category }}</h4>
     <h2>{{ product.price }}</h2>
         <h3>{{ product.name }}</h3>
+        <div><img src="media/{{ product.image }} "  height="200px" ></div>
         <p class="link-read-post"><a href="{{ product.get_absolute_url }}">Редактировать</a></p>
+        <p class="link-read-post"><a href="{% url 'deleteView' product.pk %}">Delete</a></p>
     </div>
 
 {% endfor %}
