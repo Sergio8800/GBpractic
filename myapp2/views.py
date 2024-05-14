@@ -1,10 +1,15 @@
 from datetime import date, timedelta
 
+from django.contrib.auth import logout, login, authenticate
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.views import LoginView
 from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
+from django.urls import reverse_lazy
+from django.views.generic import CreateView
 
-from .forms import UserForm, CategoryForm, ProductForm, OrderForm
+from .forms import *
 from .models import User, Category, Product, Order
 
 
@@ -90,29 +95,30 @@ def product_form(request):
 
 
 def product_form_update(request, product_id):
-    # obj = Product.objects.get(pk=product_id)
+    # intention = Product.objects.get(pk=product_id)
     intention = get_object_or_404(Product, pk=product_id)
-    form = ProductForm(request.POST or None, instance=intention)  # important
     message = 'change data'
-    if form.is_valid():
-        # obj.name = form.cleaned_data['name']
-        # obj.category = form.cleaned_data['category']
-        # obj.description = form.cleaned_data['description']
-        # obj.price = form.cleaned_data['price']
-        # obj.quantity = form.cleaned_data['quantity']
-        # obj.image = form.cleaned_data['image']
-        # Product.objects.bulk_update(obj,
-        #                             ['name', 'category', 'description', 'price', 'quantity', 'image'])
-        name = form.cleaned_data['name']
-        category = form.cleaned_data['category']
-        description = form.cleaned_data['description']
-        price = form.cleaned_data['price']
-        quantity = form.cleaned_data['quantity']
-        image = form.cleaned_data['image']
-        intention.update(name=name, category=category, description=description, price=price, quantity=quantity, image=image)
-        message = ' data is change '
+    form = ProductForm(instance=intention)  # important for entre DATA
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)  # important for entre DATA
 
-    return render(request, 'myapp2/product_form.html', {'form': form, 'message': message})
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            category = form.cleaned_data['category']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            quantity = form.cleaned_data['quantity']
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+
+            Product.objects.filter(pk=product_id).update(name=name, category=category, description=description,
+                                                         price=price, quantity=quantity,
+                                                         image=fs.save(image.name, image))
+
+            message = ' data is change '
+            # return redirect('index_start')
+
+    return render(request, 'myapp2/product_form_update.html', {'form': form, 'message': message})
 
 
 def deleteView(request, product_id):
@@ -180,3 +186,37 @@ def show_order(request, product_id):
     # return render(request, 'myapp2/order_form.html', {'form': form, 'message': message})
 
     return HttpResponse(f"Отображение товара с id = {product_id}")
+
+
+class RegisterUser(CreateView):
+    form_class = RegisterUserForm
+    template_name = 'myapp2/register.html'
+    success_url = reverse_lazy('loginform')
+
+    # эта функция для автоматической аунтификации на сате после регистрации.
+    def form_valid(self, form):
+        user = form.save()
+        login(self.request, user)
+        return redirect('index_start')
+    #     # form.instance.created_by = self.request.user
+    #     # return super().form_valid(form)
+    #
+    #     # valid = super(CreateArtistView, self).form_valid(form)
+    #     user, password = form.cleaned_data.get('username'), form.cleaned_data.get('password1')
+    #     print(user,password)
+    #     new_user = authenticate(username=user, password=password)
+    #     login(self.request, new_user)
+    #     return redirect('index_start')
+
+
+class LoginUser(LoginView):
+    form_class = LoginUserForm
+    template_name = 'myapp2/login.html'
+
+    def get_success_url(self):
+        return reverse_lazy('index_start')
+
+
+def logout_user(request):
+    logout(request)
+    return redirect('loginform')

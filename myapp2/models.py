@@ -37,7 +37,8 @@ class Product(models.Model):
     image = models.ImageField(upload_to="photo/%Y/%m/%d", verbose_name="Photo")
 
     def get_absolute_url(self):
-        return reverse('product', kwargs={'product_id': self.pk})
+        return reverse('product_form_update', kwargs={'product_id': self.pk})
+    # product_form_update - свянан с урлом, урл связан с апдейт вьюхой.
 
     def __str__(self):
         return f'{self.name} / {self.category} / {self.price}'

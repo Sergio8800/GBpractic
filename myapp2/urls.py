@@ -17,12 +17,15 @@ if settings.DEBUG:
         path('product_del/<int:product_id>/', show_order, name='order'),
         # name='product' на прямую связана get_absolute_url
         path('order/add/', order_form, name='order_form'),
+        path('login/', LoginUser.as_view(), name='loginform'),
+        path('register/', RegisterUser.as_view(), name='register'),
+        path('logout/', logout_user, name='logout'),
 
         path('product/del/<int:product_id>/', deleteView, name='deleteView'),
         path('orders/', index_orders, name='index_orders'),
         path('orders1/', index_ord_filtr, name='index_ord_filtr'),
-        path('product/<int:product_id>/', product_form_update, name='product'), # name='product' на прямую связана get_absolute_url
-        path('order_update/<int:product_id>/', show_order, name='order'), # name='product' на прямую связана get_absolute_url
+        path('product/<int:product_id>/', product_form_update, name='product_form_update'), # name='product' на прямую связана get_absolute_url
+        path('order_update/<int:product_id>/', show_order, name='order'),
         # Форма будет доступна по адресу
         # http://127.0.0.1:8000/myapp2/user/add/
         # path('forms/', many_fields_form, name='many_fields_form'),

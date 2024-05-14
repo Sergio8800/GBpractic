@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="static/css/style.css">
+{% block content %}
+<h1>Form login </h1>
+<h3>{{ title }}</h3>
+<form method="post">
+{% csrf_token %}
+{% for f in form %}
+    <div class="centre-login">
+       <p class="right-login"><label for="{{ f.name.id_for_label}}">{{f.label}}</label>
+        {{ f }}</p>
+    <div class="right-login">{{f.errors}}</div>
+    {% endfor%}
+<input class="btn" type="submit" value="Login">
+    </div>
+</form>
+{% endblock %}
+

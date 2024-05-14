@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp',
     'myapp2',
+    'myapp3',
+    'mathfilters',
     'women',
 ]
 

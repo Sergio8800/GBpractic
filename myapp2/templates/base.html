@@ -3,27 +3,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!--    <link rel="stylesheet" href="/static/myapp2/css/style.css">-->
-<!--    добавили статику в сэтингс и ввурху. все пути ищищтся отностильно папки стмтик-->
-    <link rel="stylesheet" href="{% static '/myapp2/css/style.css' %}">
+    <!--    <link rel="stylesheet" href="/static/myapp2/css/style.css">-->
+    <!--    добавили статику в сэтингс и ввурху. все пути ищищтся отностильно папки стмтик-->
+    <link rel="stylesheet" type="text/css" href="{% static '/myapp2/css/style2.css' %}">
     <title>{% block title %}Формы{% endblock %}</title>
 
 </head>
 <body>
 <header>
-    <div class="main-link">
-        <p><a href="/myapp2/">Main let's go</a></p>
-
-    </div>
     <ul>
         <li><a href="{% url 'index_start' %}">Main let's go</a></li>
-        <li><a href="/myapp2/user/add">Add User</a></li>
+        <li><a href="{% url 'user_form' %}">Add User</a></li>
         <li><a href="/myapp2/product/add">Add Product</a></li>
         <li><a href="/myapp2/order/add">Add Order</a></li>
         <li><a href="/myapp2/orders/">All of Order</a></li>
         <li><a href="/myapp2/orders1/">Filtr of Order</a></li>
-
+        {% if request.user.is_authenticated%}
+        <li>{{ user.username}} | <a href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
+        <li><a href="{% url 'loginform' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Registration</a></li>
+        {% endif %}
     </ul>
+
 </header>
 
 <div class="content">

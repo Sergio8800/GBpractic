@@ -1,9 +1,12 @@
 import datetime
 
+import django.contrib.auth.forms
+from django.contrib.auth.forms import UserCreationForm, User, AuthenticationForm
 from django.utils.safestring import SafeString
 
-from .models import Category, User, Product, Order
+from .models import Category, Product, Order
 from django import forms
+
 
 
 # Пользовательская валидация данных с помощью
@@ -44,6 +47,27 @@ class UserForm(forms.Form):
     #     return email
 
 
+class RegisterUserForm(UserCreationForm):
+    username = forms.CharField(max_length=50, label='Login', widget=forms.TextInput(
+        attrs={'class': 'form-control', 'placeholder': 'Введите имя пользователя'}))
+    password1 = forms.CharField(label='Password', widget=forms.TextInput(
+        attrs={'class': 'form-control', 'placeholder': 'Введите пароль'}))
+    password2 = forms.CharField(label='Password repeat', widget=forms.TextInput(
+        attrs={'class': 'form-control', 'placeholder': 'Повторите пароль'}))
+    email = forms.EmailField(label='E-mail',
+                             widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'user@mail.ru'}))
+    t_number = forms.CharField(max_length=15, label='phone namber')
+    # adress = forms.CharField(max_length=150, label='adress', required=False)
+    class Meta:
+        model = User
+        fields = ('username', 'password1', 'password2', 'email', 't_number')
+
+class LoginUserForm(AuthenticationForm):
+    username = forms.CharField(max_length=50, label='Login', widget=forms.TextInput(
+        attrs={'class': 'form-control', 'placeholder': 'Введите имя пользователя'}))
+    password = forms.CharField(label='Password', widget=forms.TextInput(
+        attrs={'class': 'form-control', 'placeholder': 'Введите пароль'}))
+
 class CategoryForm(forms.Form):
     name = forms.CharField(max_length=50)
 
@@ -71,28 +95,25 @@ class OrderForm(forms.ModelForm):
         model = Order
         # fields = '__all__'
         fields = ['customer', 'products', 'quantity_prod']
-        # widgets = {
-        #     'customer': forms.TextInput(attrs={"class": "form-control", "placeholder": "Имя" }),
-        #
-        #     'products': forms.TextInput(attrs={"class": "form-control", "placeholder": "Товар"}),
-        #     'quantity_prod': forms.IntegerField(attrs={"class": "form-control", "placeholder": "Количество"}),
-        # }
 
 
-class ManyFieldsFormWidget(forms.Form):
-    name = forms.CharField(max_length=50, widget=forms.TextInput(
-        attrs={'class': 'form-control', 'placeholder': 'Введите имя пользователя'}))
-    email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'user@mail.ru'}))
-    age = forms.IntegerField(min_value=18, widget=forms.NumberInput(attrs={'class': 'form-control'}))
-    height = forms.FloatField(widget=forms.NumberInput(attrs={'class': 'form-control'}))
-    is_active = forms.BooleanField(required=False, widget=forms.CheckboxInput(attrs={'class': 'form-check-input'}))
-    # даты приходится вводить вручную:
-    # birthdate = forms.DateField(initial=datetime.date.today, widget=forms.DateInput(attrs={'class': 'form-control'}))
-    birthdate = forms.DateField(initial=datetime.date.today,
-                                widget=forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}))
-    gender = forms.ChoiceField(choices=[('M', 'Male'), ('F', 'Female')],
-                               widget=forms.RadioSelect(attrs={'class': 'form-check-input'}))
-    message = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control'}))
+
+
+
+# class ManyFieldsFormWidget(forms.Form):
+#     name = forms.CharField(max_length=50, widget=forms.TextInput(
+#         attrs={'class': 'form-control', 'placeholder': 'Введите имя пользователя'}))
+#     email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'user@mail.ru'}))
+#     age = forms.IntegerField(min_value=18, widget=forms.NumberInput(attrs={'class': 'form-control'}))
+#     height = forms.FloatField(widget=forms.NumberInput(attrs={'class': 'form-control'}))
+#     is_active = forms.BooleanField(required=False, widget=forms.CheckboxInput(attrs={'class': 'form-check-input'}))
+#     # даты приходится вводить вручную:
+#     # birthdate = forms.DateField(initial=datetime.date.today, widget=forms.DateInput(attrs={'class': 'form-control'}))
+#     birthdate = forms.DateField(initial=datetime.date.today,
+#                                 widget=forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}))
+#     gender = forms.ChoiceField(choices=[('M', 'Male'), ('F', 'Female')],
+#                                widget=forms.RadioSelect(attrs={'class': 'form-check-input'}))
+#     message = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control'}))
 
 
 # MEDIA_URL = '/media/'

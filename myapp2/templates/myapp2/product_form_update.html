@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="static/css/style.css">
+{% block content %}
+<h1>Changer</h1>
+<h3>{{ message }}</h3>
+<form method="post" enctype="multipart/form-data">
+{% csrf_token %}
+{{ form.as_div }}
+<input type="submit" value="Отправить">
+</form>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+{% extends 'base_app3.html' %}
+{% load static %}
+{% load mathfilters %}
+
+
+{% block content %}
+
+
+{% for goods in goods_list %}
+
+
+{% for model in goods.genres.all %}
+{{ model.name }}
+{% endfor %}
+</a></h3>
+<h4 class="product-price">{{goods.price|mul:0.7|floatformat:0}}
+    <del class="product-old-price">{{goods.price}}</del>
+</h4>
+
+{% endfor %}
+
+
+
+{% endblock content %}

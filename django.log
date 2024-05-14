@@ -5103,3 +5103,3220 @@ Not Found: /favicon.ico
 "GET /myapp2/product/23/ HTTP/1.1" 200 2590
 "POST /myapp2/product/add/ HTTP/1.1" 302 0
 "GET /myapp2/product/add/ HTTP/1.1" 200 2493
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 6809)
+"GET /myapp2/ HTTP/1.1" 200 18198
+- Broken pipe from ('127.0.0.1', 6811)
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+Not Found: /myapp2/media/0.
+Not Found: /myapp2/media/1
+"GET /myapp2/media/0. HTTP/1.1" 404 4689
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/1 HTTP/1.1" 404 4686
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2426
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp2/product/27/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 115, in product_form_update
+    return render(request, 'myapp2/product_form_update.html', {'form': form, 'message': message})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_form_update' not found. 'product_form_update' is not a valid view function or pattern name.
+"GET /myapp2/product/27/ HTTP/1.1" 500 159772
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 6766
+Internal Server Error: /myapp2/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 18, in index
+    return render(request, 'myapp2/index.html', context=context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 909, in _resolve_lookup
+    current = current()
+  File "C:\Auto_site_practic_gb\myproject\myapp2\models.py", line 40, in get_absolute_url
+    return reverse('product', kwargs={'product_id': self.pk})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product' not found. 'product' is not a valid view function or pattern name.
+"GET /myapp2/ HTTP/1.1" 500 213233
+C:\Auto_site_practic_gb\myproject\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/orders/ HTTP/1.1" 200 4948
+"GET /myapp2/ HTTP/1.1" 200 18198
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp2/product/27/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 115, in product_form_update
+    return render(request, 'myapp2/product_form_update.html', {'form': form, 'message': message})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_form_update' with no arguments not found. 1 pattern(s) tried: ['myapp2/product/(?P<product_id>[0-9]+)/\\Z']
+"GET /myapp2/product/27/ HTTP/1.1" 500 161646
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2547
+Internal Server Error: /myapp2/product/27/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 112, in product_form_update
+    intention.update(name=name, category=category, description=description, price=price, quantity=quantity, image=image)
+AttributeError: 'Product' object has no attribute 'update'
+"POST /myapp2/product/27/ HTTP/1.1" 500 69470
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2547
+"GET /myapp2/ HTTP/1.1" 200 18198
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2547
+Internal Server Error: /myapp2/product/27/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 104, in product_form_update
+    intention.update(name=name, category=category, description=description, price=price, quantity=quantity, image=image)
+AttributeError: 'Product' object has no attribute 'update'
+"POST /myapp2/product/27/ HTTP/1.1" 500 69323
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2547
+"GET /myapp2/ HTTP/1.1" 200 18198
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+- Broken pipe from ('127.0.0.1', 6919)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2547
+Internal Server Error: /myapp2/product/27/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 104, in product_form_update
+    tmp = intention(name=name, category=category, description=description, price=price, quantity=quantity, image=image)
+TypeError: 'Product' object is not callable
+"POST /myapp2/product/27/ HTTP/1.1" 500 69192
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2547
+"GET /myapp2/ HTTP/1.1" 200 18198
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2547
+"POST /myapp2/product/27/ HTTP/1.1" 200 2552
+"GET /myapp2/ HTTP/1.1" 200 18198
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2547
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 18198
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2770
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/23/ HTTP/1.1" 200 2770
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/23/ HTTP/1.1" 200 2560
+"POST /myapp2/product/23/ HTTP/1.1" 200 2566
+"GET /myapp2/ HTTP/1.1" 200 18199
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/24/ HTTP/1.1" 200 2566
+"GET /myapp2/product/24/ HTTP/1.1" 200 2582
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/product/27/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 97, in product_form_update
+    if form.is_valid():
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 334, in _clean_fields
+    value = bf.initial if field.disabled else bf.data
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\boundfield.py", line 136, in data
+    return self.form._widget_data_value(self.field.widget, self.html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 216, in _widget_data_value
+    return widget.value_from_datadict(self.data, self.files, html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\widgets.py", line 295, in value_from_datadict
+    return data.get(name)
+AttributeError: 'list' object has no attribute 'get'
+"GET /myapp2/product/27/ HTTP/1.1" 500 93469
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6975)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/product/27/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 97, in product_form_update
+    if form.is_valid():
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 334, in _clean_fields
+    value = bf.initial if field.disabled else bf.data
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\boundfield.py", line 136, in data
+    return self.form._widget_data_value(self.field.widget, self.html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\forms.py", line 216, in _widget_data_value
+    return widget.value_from_datadict(self.data, self.files, html_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\forms\widgets.py", line 295, in value_from_datadict
+    return data.get(name)
+AttributeError: 'tuple' object has no attribute 'get'
+"GET /myapp2/product/27/ HTTP/1.1" 500 93473
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2786
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2826
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2826
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 18199
+Not Found: /myapp2/media/0.
+Not Found: /myapp2/media/1
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2826
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 18199
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2786
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2786
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 18199
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2786
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2786
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 18199
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2786
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 18199
+Not Found: /myapp2/media/0.
+Not Found: /myapp2/media/1
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2786
+"POST /myapp2/product/27/ HTTP/1.1" 200 2521
+"GET /myapp2/ HTTP/1.1" 200 18211
+Not Found: /myapp2/media/0.
+Not Found: /myapp2/media/vfe212.webp
+Not Found: /myapp2/media/1
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2806
+Internal Server Error: /myapp2/product/27/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 103, in product_form_update
+    image = form.data['image']
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image'
+"POST /myapp2/product/27/ HTTP/1.1" 500 77613
+"GET /myapp2/product/27/ HTTP/1.1" 200 2806
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2806
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/27/ HTTP/1.1" 200 2806
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 18211
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2806
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/27/ HTTP/1.1" 200 2826
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 18211
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/29/ HTTP/1.1" 200 2826
+"POST /myapp2/product/29/ HTTP/1.1" 200 2496
+"GET /myapp2/ HTTP/1.1" 200 18213
+Not Found: /myapp2/media/vtimages.jpg
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 404 4742
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 18213
+- Broken pipe from ('127.0.0.1', 9081)
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+Not Found: /myapp2/media/vtimages.jpg
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 404 4742
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 9082)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 18213
+"GET /static/myapp2/css/style.css HTTP/1.1" 200 2579
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/vtimages.jpg
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 404 4742
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 12067)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/29/ HTTP/1.1" 200 2826
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/29/ HTTP/1.1" 200 2826
+"POST /myapp2/product/29/ HTTP/1.1" 200 2480
+"GET /myapp2/ HTTP/1.1" 200 18220
+Not Found: /myapp2/media/IMG_20190607_WA000543094.jpg
+Not Found: /myapp2/media/0.
+"GET /myapp2/media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 4806
+"GET /myapp2/media/0. HTTP/1.1" 404 4701
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/34/ HTTP/1.1" 200 2826
+"POST /myapp2/product/34/ HTTP/1.1" 200 2486
+"GET /myapp2/ HTTP/1.1" 200 18244
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+Not Found: /myapp2/media/IMG_20190607_WA000543094.jpg
+"GET /myapp2/media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 4806
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/33/ HTTP/1.1" 200 2826
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/33/ HTTP/1.1" 200 2786
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 18244
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/IMG_20190607_WA000543094.jpg
+"GET /myapp2/media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 4806
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/33/ HTTP/1.1" 200 2786
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 12199)
+"GET /myapp2/ HTTP/1.1" 200 18244
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+Not Found: /myapp2/media/IMG_20190607_WA000543094.jpg
+"GET /myapp2/media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 4806
+- Broken pipe from ('127.0.0.1', 12201)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/33/ HTTP/1.1" 200 2786
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/product/33/ HTTP/1.1" 200 2578
+"POST /myapp2/product/33/ HTTP/1.1" 200 2544
+"GET /myapp2/ HTTP/1.1" 200 18255
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+Not Found: /myapp2/media/vfe212.webp
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 404 4738
+Not Found: /myapp2/media/IMG_20190607_WA000543094.jpg
+"GET /myapp2/media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 4806
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/32/ HTTP/1.1" 200 2583
+"POST /myapp2/product/32/ HTTP/1.1" 200 2549
+"GET /myapp2/ HTTP/1.1" 200 18265
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+Not Found: /myapp2/media/1
+Not Found: /myapp2/media/IMG_20190607_WA000543094.jpg
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 4806
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/31/ HTTP/1.1" 200 2579
+"POST /myapp2/product/31/ HTTP/1.1" 200 2545
+"GET /myapp2/ HTTP/1.1" 200 18318
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 200 66658
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+Not Found: /myapp2/media/IMG_20190607_WA000543094.jpg
+"GET /myapp2/media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 4806
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/30/ HTTP/1.1" 200 2577
+"POST /myapp2/product/30/ HTTP/1.1" 200 2543
+"GET /myapp2/ HTTP/1.1" 200 18340
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 200 15506
+Not Found: /myapp2/media/IMG_20190607_WA000543094.jpg
+Not Found: /myapp2/media/1
+"GET /myapp2/media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 4806
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/29/ HTTP/1.1" 200 2571
+"POST /myapp2/product/29/ HTTP/1.1" 200 2562
+"GET /myapp2/ HTTP/1.1" 200 18340
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 200 15506
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+Not Found: /myapp2/media/IMG_20190607_WA000543094.jpg
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 200 66658
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 4806
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/29/ HTTP/1.1" 200 2571
+Not Found: /media/IMG_20190607_WA000543094.jpg
+"GET /media/IMG_20190607_WA000543094.jpg HTTP/1.1" 404 2495
+"POST /myapp2/product/29/ HTTP/1.1" 200 2487
+"GET /myapp2/ HTTP/1.1" 200 18328
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 200 6318
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/28/ HTTP/1.1" 200 2580
+"POST /myapp2/product/28/ HTTP/1.1" 200 2546
+"GET /myapp2/ HTTP/1.1" 200 18340
+Not Found: /myapp2/media/1
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 200 527059
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/26/ HTTP/1.1" 200 1308
+"POST /myapp2/product/del/26/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 17980
+Not Found: /myapp2/media/1
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/25/ HTTP/1.1" 200 1326
+"POST /myapp2/product/del/25/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 17618
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/24/ HTTP/1.1" 200 1326
+"POST /myapp2/product/del/24/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 17253
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/23/ HTTP/1.1" 200 1326
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/23/ HTTP/1.1" 200 1350
+"POST /myapp2/product/del/23/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 16893
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/22/ HTTP/1.1" 200 1350
+"POST /myapp2/product/del/22/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 16531
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 16531
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/20/ HTTP/1.1" 200 1350
+"POST /myapp2/product/del/20/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 16167
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/15/ HTTP/1.1" 200 1350
+"POST /myapp2/product/del/15/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 15808
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/14/ HTTP/1.1" 200 1335
+"POST /myapp2/product/del/14/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 15449
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/5/ HTTP/1.1" 200 1351
+"POST /myapp2/product/del/5/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 15093
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/product/del/13/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 125, in deleteView
+    return render(request, template_name, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'static'. Did you forget to register or load this tag?
+"GET /myapp2/product/del/13/ HTTP/1.1" 500 150594
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/13/ HTTP/1.1" 200 1757
+"POST /myapp2/product/del/13/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 14728
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/3/ HTTP/1.1" 200 1765
+"POST /myapp2/product/del/3/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 14377
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/12/ HTTP/1.1" 200 1765
+"POST /myapp2/product/del/12/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 14018
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 14066
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 14066
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 14073
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 14066
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 14066
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 14075
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 14075
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/46/ HTTP/1.1" 200 1831
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 12531)
+"GET /myapp2/ HTTP/1.1" 200 14075
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+- Broken pipe from ('127.0.0.1', 12532)
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 14075
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 14075
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/46/ HTTP/1.1" 200 1831
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/11/ HTTP/1.1" 200 1848
+"POST /myapp2/product/del/11/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 13730
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13730
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Not Found: /sum/
+"GET /sum/ HTTP/1.1" 404 2405
+"GET /admin/ HTTP/1.1" 200 7073
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/myapp2/product/ HTTP/1.1" 200 29857
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/myapp2/user/ HTTP/1.1" 200 16575
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/category/ HTTP/1.1" 200 10733
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/user/ HTTP/1.1" 200 16575
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/ HTTP/1.1" 200 5973
+"GET /admin/myapp2/product/ HTTP/1.1" 200 29857
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 2478)
+"GET /myapp2/ HTTP/1.1" 200 13730
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 200 15506
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 200 66658
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 200 6318
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/6/ HTTP/1.1" 200 1410
+"GET /myapp2/ HTTP/1.1" 200 13730
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13730
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4698
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/product/del/33/ HTTP/1.1" 200 1831
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp3\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13864
+"GET /static/myapp2/css/style.css HTTP/1.1" 200 3012
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 200 66658
+Not Found: /myapp2/media/1
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 200 6318
+"GET /myapp2/media/1 HTTP/1.1" 404 4878
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 200 15506
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: register.html
+"GET /myapp2/register/ HTTP/1.1" 500 79630
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: index() takes 0 positional arguments but 1 was given
+"GET /myapp3/ HTTP/1.1" 500 61749
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13864
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4878
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 2400
+"GET /myapp2/register/ HTTP/1.1" 200 2660
+"GET /myapp2/user/add/ HTTP/1.1" 200 2391
+"GET /myapp2/ HTTP/1.1" 200 13855
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4878
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2651
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13850
+- Broken pipe from ('127.0.0.1', 8530)
+- Broken pipe from ('127.0.0.1', 8528)
+- Broken pipe from ('127.0.0.1', 8529)
+- Broken pipe from ('127.0.0.1', 8531)
+- Broken pipe from ('127.0.0.1', 8532)
+- Broken pipe from ('127.0.0.1', 8533)
+- Broken pipe from ('127.0.0.1', 8534)
+- Broken pipe from ('127.0.0.1', 8536)
+- Broken pipe from ('127.0.0.1', 8535)
+- Broken pipe from ('127.0.0.1', 8537)
+- Broken pipe from ('127.0.0.1', 8538)
+- Broken pipe from ('127.0.0.1', 8539)
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4878
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2104
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 8546)
+"GET /myapp2/register/ HTTP/1.1" 200 2131
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 8557)
+"POST /myapp2/register/ HTTP/1.1" 200 2351
+"GET /myapp2/user/add/ HTTP/1.1" 200 2386
+"GET /myapp2/register/ HTTP/1.1" 200 2131
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 178, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 72, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 37, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\forms.py", line 121, in __init__
+    if self._meta.model.USERNAME_FIELD in self.fields:
+AttributeError: type object 'User' has no attribute 'USERNAME_FIELD'
+"GET /myapp2/register/ HTTP/1.1" 500 91801
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 8583)
+"GET /myapp2/ HTTP/1.1" 200 13850
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4878
+- Broken pipe from ('127.0.0.1', 8585)
+- Broken pipe from ('127.0.0.1', 8590)
+- Broken pipe from ('127.0.0.1', 8591)
+- Broken pipe from ('127.0.0.1', 8588)
+- Broken pipe from ('127.0.0.1', 8592)
+- Broken pipe from ('127.0.0.1', 8587)
+- Broken pipe from ('127.0.0.1', 8593)
+- Broken pipe from ('127.0.0.1', 8589)
+- Broken pipe from ('127.0.0.1', 8594)
+- Broken pipe from ('127.0.0.1', 8596)
+- Broken pipe from ('127.0.0.1', 8595)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2571
+"POST /myapp2/register/ HTTP/1.1" 200 2878
+"POST /myapp2/register/ HTTP/1.1" 200 2809
+"POST /myapp2/register/ HTTP/1.1" 200 2768
+"POST /myapp2/register/ HTTP/1.1" 302 0
+"GET /women/login/ HTTP/1.1" 200 22
+"GET /myapp2/ HTTP/1.1" 200 13850
+- Broken pipe from ('127.0.0.1', 10025)
+- Broken pipe from ('127.0.0.1', 10026)
+- Broken pipe from ('127.0.0.1', 10027)
+- Broken pipe from ('127.0.0.1', 10028)
+- Broken pipe from ('127.0.0.1', 10029)
+- Broken pipe from ('127.0.0.1', 10030)
+- Broken pipe from ('127.0.0.1', 10031)
+- Broken pipe from ('127.0.0.1', 10032)
+- Broken pipe from ('127.0.0.1', 10033)
+- Broken pipe from ('127.0.0.1', 10034)
+- Broken pipe from ('127.0.0.1', 10035)
+- Broken pipe from ('127.0.0.1', 10036)
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 4878
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13850
+"GET /static/myapp2/css/style.css HTTP/1.1" 200 3012
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 200 66658
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 200 15506
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 200 6318
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5052
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2571
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /women/login/ HTTP/1.1" 200 22
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /women/login/ HTTP/1.1" 200 22
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13850
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5052
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2571
+"GET /women/login/ HTTP/1.1" 200 22
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13850
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5052
+- Broken pipe from ('127.0.0.1', 5111)
+- Broken pipe from ('127.0.0.1', 5114)
+- Broken pipe from ('127.0.0.1', 5113)
+- Broken pipe from ('127.0.0.1', 5117)
+- Broken pipe from ('127.0.0.1', 5115)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /women/login/ HTTP/1.1" 200 22
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13851
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/login/ HTTP/1.1" 200 1821
+"POST /myapp2/login/ HTTP/1.1" 200 1835
+"GET /admin/ HTTP/1.1" 200 7073
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/auth/user/ HTTP/1.1" 200 12334
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"POST /admin/auth/user/ HTTP/1.1" 200 8108
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/auth/user/ HTTP/1.1" 302 0
+"GET /admin/auth/user/ HTTP/1.1" 200 12032
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 11898
+"GET /admin/ HTTP/1.1" 200 7402
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /myapp2/login/ HTTP/1.1" 200 1821
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2572
+"POST /myapp2/register/ HTTP/1.1" 200 2879
+"POST /myapp2/register/ HTTP/1.1" 200 2810
+"POST /myapp2/register/ HTTP/1.1" 302 0
+"GET /women/login/ HTTP/1.1" 200 22
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13851
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/login/ HTTP/1.1" 200 1821
+"POST /myapp2/login/ HTTP/1.1" 200 1839
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7402
+"GET /admin/auth/user/ HTTP/1.1" 200 12334
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/ HTTP/1.1" 200 5553
+"GET /admin/auth/user/ HTTP/1.1" 200 12334
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/?o=3.1 HTTP/1.1" 200 12923
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/?o=-3.1 HTTP/1.1" 200 12943
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/?o=1 HTTP/1.1" 200 12523
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/add/ HTTP/1.1" 200 11283
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /admin/auth/user/?o=1 HTTP/1.1" 200 12523
+"GET /admin/auth/group/ HTTP/1.1" 200 8391
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12334
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/category/ HTTP/1.1" 200 10733
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/user/ HTTP/1.1" 200 16575
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 29857
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /myapp2/ HTTP/1.1" 200 13851
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/login/ HTTP/1.1" 200 1821
+"POST /myapp2/login/ HTTP/1.1" 200 1831
+"GET /myapp2/register/ HTTP/1.1" 200 2572
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13851
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/login/ HTTP/1.1" 200 1871
+"GET /myapp2/register/ HTTP/1.1" 200 2572
+"GET /myapp2/register/ HTTP/1.1" 200 2572
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 5328)
+- Broken pipe from ('127.0.0.1', 5333)
+- Broken pipe from ('127.0.0.1', 5334)
+"GET /myapp2/register/ HTTP/1.1" 200 2572
+"GET /myapp2/register/ HTTP/1.1" 200 2686
+"GET /myapp2/register/ HTTP/1.1" 200 2686
+"GET /myapp2/login/ HTTP/1.1" 200 1949
+"GET /myapp2/register/ HTTP/1.1" 200 2686
+"GET /myapp2/register/ HTTP/1.1" 200 2686
+"GET /myapp2/register/ HTTP/1.1" 200 2808
+"GET /myapp2/user/add/ HTTP/1.1" 200 2387
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 5350)
+"GET /myapp2/ HTTP/1.1" 200 13851
+- Broken pipe from ('127.0.0.1', 5355)
+- Broken pipe from ('127.0.0.1', 5357)
+- Broken pipe from ('127.0.0.1', 5358)
+- Broken pipe from ('127.0.0.1', 5359)
+- Broken pipe from ('127.0.0.1', 5360)
+- Broken pipe from ('127.0.0.1', 5361)
+- Broken pipe from ('127.0.0.1', 5363)
+- Broken pipe from ('127.0.0.1', 5362)
+- Broken pipe from ('127.0.0.1', 5365)
+- Broken pipe from ('127.0.0.1', 5364)
+- Broken pipe from ('127.0.0.1', 5366)
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2688
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13852
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 255
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13852
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 776
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13852
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 527
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 527
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 901
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 1462
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2171
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/login/ HTTP/1.1" 200 1933
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/register/ HTTP/1.1" 200 2672
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 2371
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2269
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/login/ HTTP/1.1" 200 1933
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/register/ HTTP/1.1" 200 2672
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2523
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/login/ HTTP/1.1" 200 1933
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/register/ HTTP/1.1" 200 2672
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/register/ HTTP/1.1" 200 2672
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2566
+"GET /myapp2/register/ HTTP/1.1" 200 2864
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2563
+"GET /myapp2/register/ HTTP/1.1" 200 2864
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2600
+"GET /myapp2/register/ HTTP/1.1" 200 2864
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2647
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 5385)
+"GET /myapp2/register/ HTTP/1.1" 200 2864
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2648
+"GET /myapp2/register/ HTTP/1.1" 200 2864
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2648
+"GET /myapp2/register/ HTTP/1.1" 200 2864
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2648
+"GET /myapp2/login/ HTTP/1.1" 200 2006
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/register/ HTTP/1.1" 200 2864
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: index() takes 0 positional arguments but 1 was given
+"GET /myapp3/ HTTP/1.1" 500 61758
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2802
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 2870
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/ HTTP/1.1" 200 13835
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2876
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/orders1/ HTTP/1.1" 200 1510
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/orders/ HTTP/1.1" 200 3554
+"GET /myapp2/order/add/ HTTP/1.1" 200 6041
+"GET /myapp2/order/add/ HTTP/1.1" 200 5909
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: index() takes 0 positional arguments but 1 was given
+"GET /myapp3/ HTTP/1.1" 500 61759
+"GET /myapp2/orders1/ HTTP/1.1" 200 1379
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/user/add/ HTTP/1.1" 200 2252
+"GET /myapp2/login/ HTTP/1.1" 200 1887
+"GET /myapp2/register/ HTTP/1.1" 200 2745
+"GET /myapp2/user/add/ HTTP/1.1" 200 2252
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: index() takes 0 positional arguments but 1 was given
+"GET /myapp3/ HTTP/1.1" 500 61758
+C:\Auto_site_practic_gb\myproject\myapp3\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/order/add/ HTTP/1.1" 200 5910
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+"GET /myapp2/ HTTP/1.1" 200 13704
+- Broken pipe from ('127.0.0.1', 5560)
+- Broken pipe from ('127.0.0.1', 5561)
+- Broken pipe from ('127.0.0.1', 5562)
+- Broken pipe from ('127.0.0.1', 5563)
+- Broken pipe from ('127.0.0.1', 5565)
+- Broken pipe from ('127.0.0.1', 5564)
+- Broken pipe from ('127.0.0.1', 5566)
+- Broken pipe from ('127.0.0.1', 5567)
+- Broken pipe from ('127.0.0.1', 5568)
+- Broken pipe from ('127.0.0.1', 5569)
+- Broken pipe from ('127.0.0.1', 5570)
+- Broken pipe from ('127.0.0.1', 5571)
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5056
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13670
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/logout/ HTTP/1.1" 200 2711
+C:\Auto_site_practic_gb\myproject\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13670
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/logout/ HTTP/1.1" 302 0
+"GET /women/login/ HTTP/1.1" 200 22
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 5775)
+"GET /myapp2/ HTTP/1.1" 200 13722
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 197, in form_valid
+    user = form.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\forms.py", line 151, in save
+    user.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+"POST /myapp2/register/ HTTP/1.1" 500 176786
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+"GET /myapp2/ HTTP/1.1" 200 13722
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 197, in form_valid
+    user = form.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\forms.py", line 151, in save
+    user.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+"POST /myapp2/register/ HTTP/1.1" 500 176728
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+"GET /myapp2/ HTTP/1.1" 200 13722
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 198, in form_valid
+    login(self.request, self.request.user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\__init__.py", line 146, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+"POST /myapp2/register/ HTTP/1.1" 500 93633
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/login/ HTTP/1.1" 200 1905
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 6228)
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 202, in form_valid
+    login(self.request, user=user_form())
+TypeError: user_form() missing 1 required positional argument: 'request'
+"POST /myapp2/register/ HTTP/1.1" 500 85194
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 202, in form_valid
+    login(self.request, user=user_form)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\__init__.py", line 146, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+AttributeError: 'function' object has no attribute '_meta'
+"POST /myapp2/register/ HTTP/1.1" 500 89983
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 202, in form_valid
+    login(self.request, user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\__init__.py", line 146, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+AttributeError: 'dict' object has no attribute '_meta'
+"POST /myapp2/register/ HTTP/1.1" 500 90171
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 201, in form_valid
+    id_password2 = form.cleaned_data['password']
+KeyError: 'password'
+"POST /myapp2/register/ HTTP/1.1" 500 85142
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 201, in form_valid
+    id_password2 = form.cleaned_data['password']
+KeyError: 'password'
+"POST /myapp2/register/ HTTP/1.1" 500 85137
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 201, in form_valid
+    id_password2 = form.cleaned_data['password']
+KeyError: 'password'
+"POST /myapp2/register/ HTTP/1.1" 500 85163
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 201, in form_valid
+    id_password2 = form.cleaned_data['id_password2']
+KeyError: 'id_password2'
+"POST /myapp2/register/ HTTP/1.1" 500 85187
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13722
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 205, in form_valid
+    login(self.request, new_user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\__init__.py", line 146, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+"POST /myapp2/register/ HTTP/1.1" 500 94119
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 206, in form_valid
+    login(self.request, new_user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\__init__.py", line 146, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+"POST /myapp2/register/ HTTP/1.1" 500 94123
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 206, in form_valid
+    login(self.request, new_user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\__init__.py", line 146, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+"POST /myapp2/register/ HTTP/1.1" 500 94119
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 206, in form_valid
+    login(self.request, new_user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\__init__.py", line 146, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+"POST /myapp2/register/ HTTP/1.1" 500 94103
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 203, in form_valid
+    user, password = form.cleaned_data['user'], form.cleaned_data.get('password1')
+KeyError: 'user'
+"POST /myapp2/register/ HTTP/1.1" 500 84685
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 203, in form_valid
+    user, password = form.cleaned_data['username'], form.cleaned_data.get('password1')
+KeyError: 'username'
+"POST /myapp2/register/ HTTP/1.1" 500 84709
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\myproject\myapp2\views.py", line 206, in form_valid
+    login(self.request, new_user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\__init__.py", line 146, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+"POST /myapp2/register/ HTTP/1.1" 500 94107
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 12991)
+"GET /myapp2/ HTTP/1.1" 200 13722
+"GET /static/myapp2/css/style2.css HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 304 0
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/register/ HTTP/1.1" 200 2763
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2575
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 133, in form_valid
+    self.object = form.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\forms.py", line 151, in save
+    user.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+"POST /myapp2/register/ HTTP/1.1" 500 176869
+"GET /myapp2/register/ HTTP/1.1" 200 2575
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 133, in form_valid
+    self.object = form.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\forms.py", line 151, in save
+    user.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+"POST /myapp2/register/ HTTP/1.1" 500 176870
+"GET /myapp2/register/ HTTP/1.1" 200 2575
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 133, in form_valid
+    self.object = form.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\forms.py", line 151, in save
+    user.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+"POST /myapp2/register/ HTTP/1.1" 500 176871
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2575
+Internal Server Error: /myapp2/register/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\edit.py", line 133, in form_valid
+    self.object = form.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\forms.py", line 151, in save
+    user.save()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+"POST /myapp2/register/ HTTP/1.1" 500 176871
+C:\Auto_site_practic_gb\myproject\myapp2\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /myapp2/register/ HTTP/1.1" 200 2593
+"POST /myapp2/register/ HTTP/1.1" 302 0
+"GET /myapp2/login/ HTTP/1.1" 200 1905
+"POST /myapp2/login/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 13671
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 301 0
+"GET /myapp2/ HTTP/1.1" 200 13671
+- Broken pipe from ('127.0.0.1', 13183)
+- Broken pipe from ('127.0.0.1', 13185)
+- Broken pipe from ('127.0.0.1', 13186)
+- Broken pipe from ('127.0.0.1', 13187)
+- Broken pipe from ('127.0.0.1', 13188)
+- Broken pipe from ('127.0.0.1', 13189)
+- Broken pipe from ('127.0.0.1', 13184)
+- Broken pipe from ('127.0.0.1', 13190)
+- Broken pipe from ('127.0.0.1', 13191)
+- Broken pipe from ('127.0.0.1', 13192)
+- Broken pipe from ('127.0.0.1', 13193)
+Not Found: /favicon.ico
+Not Found: /myapp2/media/1
+- Broken pipe from ('127.0.0.1', 13195)
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/logout/ HTTP/1.1" 302 0
+"GET /myapp2/login/ HTTP/1.1" 200 1902
+"GET /myapp2/register/ HTTP/1.1" 200 2593
+"POST /myapp2/register/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13722
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 200 66658
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 200 15506
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 200 6318
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 200 527059
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2535
+"GET /myapp2/login/ HTTP/1.1" 200 1902
+"GET /myapp2/register/ HTTP/1.1" 200 2593
+"POST /myapp2/register/ HTTP/1.1" 200 2760
+"POST /myapp2/register/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET /myapp2/product/46/ HTTP/1.1" 200 2647
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET /myapp2/logout/ HTTP/1.1" 302 0
+"GET /myapp2/login/ HTTP/1.1" 200 1902
+"GET /myapp2/ HTTP/1.1" 200 13722
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET / HTTP/1.1" 301 0
+"GET /myapp2/ HTTP/1.1" 200 13722
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 200 66658
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 200 15506
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 200 6318
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 200 527059
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2535
+"GET /myapp2/product/46/ HTTP/1.1" 200 2700
+"GET /myapp2/ HTTP/1.1" 200 13722
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET /myapp2/user/add/ HTTP/1.1" 200 2270
+"GET /myapp2/product/add HTTP/1.1" 301 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2571
+"GET /myapp2/orders1/ HTTP/1.1" 200 1397
+"GET /myapp2/register/ HTTP/1.1" 200 2593
+"POST /myapp2/register/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET /myapp2/user/add/ HTTP/1.1" 200 2270
+"GET /myapp2/ HTTP/1.1" 200 13722
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET /myapp2/login/ HTTP/1.1" 200 1902
+"POST /myapp2/login/ HTTP/1.1" 200 1933
+"POST /myapp2/login/ HTTP/1.1" 200 1933
+"POST /myapp2/login/ HTTP/1.1" 302 0
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+"GET /myapp2/product/add/ HTTP/1.1" 200 2518
+"GET /myapp2/user/add/ HTTP/1.1" 200 2217
+"GET /myapp2/product/add HTTP/1.1" 301 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2518
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+- Broken pipe from ('192.168.1.42', 59852)
+- Broken pipe from ('192.168.1.42', 59851)
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5234
+- Broken pipe from ('192.168.1.56', 50590)
+- Broken pipe from ('192.168.1.56', 50589)
+"GET /women/ HTTP/1.1" 200 3372
+"GET /static/women/css/styles.css HTTP/1.1" 200 7162
+"GET /static/women/images/logo.png HTTP/1.1" 200 8129
+"GET /static/women/images/share_yt.png HTTP/1.1" 200 14175
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13669
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myproject\views.py", line 4, in redirect_list
+    return redirect('index_app', permanent=True)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index_app' not found. 'index_app' is not a valid view function or pattern name.
+"GET /myapp2/ HTTP/1.1" 200 13669
+- Broken pipe from ('127.0.0.1', 5360)
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myproject\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myproject\views.py", line 4, in redirect_list
+    return redirect('index_ap', permanent=True)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'index_ap' not found. 'index_ap' is not a valid view function or pattern name.
+- Broken pipe from ('127.0.0.1', 5374)
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+C:\Auto_site_practic_gb\myproject\myproject\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13669
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 304 0
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 200 6318
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 304 0
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp3\views.py", line 27, in get
+    return render(request, 'myapp3/index.html', {'goods_list': goods, 'category': category,})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html
+"GET /myapp3/ HTTP/1.1" 500 90480
+C:\Auto_site_practic_gb\myproject\myapp3\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+KeyError: 'mathfilters'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp3\views.py", line 27, in get
+    return render(request, 'myapp3/index_app3.html', {'goods_list': goods, 'category': category,})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 1096, in load
+    lib = find_library(parser, name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 1036, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'mathfilters' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+"GET /myapp3/ HTTP/1.1" 500 172448
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 2398)
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13669
+- Broken pipe from ('127.0.0.1', 2498)
+- Broken pipe from ('127.0.0.1', 2501)
+- Broken pipe from ('127.0.0.1', 2502)
+- Broken pipe from ('127.0.0.1', 2503)
+- Broken pipe from ('127.0.0.1', 2504)
+- Broken pipe from ('127.0.0.1', 2505)
+- Broken pipe from ('127.0.0.1', 2506)
+- Broken pipe from ('127.0.0.1', 2499)
+- Broken pipe from ('127.0.0.1', 2500)
+- Broken pipe from ('127.0.0.1', 2507)
+- Broken pipe from ('127.0.0.1', 2510)
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+Not Found: /myapp2/media/1
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_last_car'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp3\views.py", line 27, in get
+    return render(request, 'myapp3/index_app3.html', {'goods_list': goods, 'category': category,})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'get_last_car', expected 'endblock'. Did you forget to register or load this tag?
+"GET /myapp3/ HTTP/1.1" 500 172985
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_last_car'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp3\views.py", line 27, in get
+    return render(request, 'myapp3/index_app3.html', {'goods_list': goods, 'category': category,})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 21: 'get_last_car', expected 'endblock'. Did you forget to register or load this tag?
+"GET /myapp3/ HTTP/1.1" 500 172842
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 2553)
+"GET /myapp3/ HTTP/1.1" 200 1041
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 2554)
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp3\views.py", line 27, in get
+    return render(request, 'myapp3/index_app3.html', {'goods_list': goods, 'category': category,})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html
+"GET /myapp3/ HTTP/1.1" 500 139609
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 2557)
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 214, in select_template
+    raise TemplateDoesNotExist(", ".join(not_found))
+django.template.exceptions.TemplateDoesNotExist: include/header.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp3\views.py", line 27, in get
+    return render(request, 'myapp3/index_app3.html', {'goods_list': goods, 'category': category,})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: include/header.html
+"GET /myapp3/ HTTP/1.1" 500 153693
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 2559)
+Watching for file changes with StatReloader
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\engine.py", line 214, in select_template
+    raise TemplateDoesNotExist(", ".join(not_found))
+django.template.exceptions.TemplateDoesNotExist: include/header.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp3\views.py", line 27, in get
+    return render(request, 'myapp3/index_app3.html', {'goods_list': goods, 'category': category,})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: include/header.html
+"GET /myapp3/ HTTP/1.1" 500 153693
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 2563)
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp3\views.py", line 27, in get
+    return render(request, 'myapp3/index_app3.html', {'goods_list': goods, 'category': category,})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout_my' not found. 'logout_my' is not a valid view function or pattern name.
+"GET /myapp3/ HTTP/1.1" 500 195423
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 2582)
+Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\myproject\myapp3\views.py", line 27, in get
+    return render(request, 'myapp3/index_app3.html', {'goods_list': goods, 'category': category,})
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Auto_site_practic_gb\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout_my' not found. 'logout_my' is not a valid view function or pattern name.
+"GET /myapp3/ HTTP/1.1" 500 193623
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 2587)
+"GET /myapp3/ HTTP/1.1" 200 6600
+"GET /static/css/bootstrap.min.css HTTP/1.1" 404 1822
+"GET /static/css/slick.css HTTP/1.1" 404 1798
+"GET /static/css/slick-theme.css HTTP/1.1" 404 1816
+"GET /static/css/nouislider.min.css HTTP/1.1" 404 1825
+"GET /static/css/font-awesome.min.css HTTP/1.1" 404 1831
+"GET /static/css/style.css HTTP/1.1" 404 1798
+"GET /static/js/jquery.min.js HTTP/1.1" 404 1807
+"GET /static/js/bootstrap.min.js HTTP/1.1" 404 1816
+"GET /static/js/jquery.zoom.min.js HTTP/1.1" 404 1822
+"GET /static/js/slick.min.js HTTP/1.1" 404 1804
+"GET /static/js/nouislider.min.js HTTP/1.1" 404 1819
+"GET /static/js/main.js HTTP/1.1" 404 1789
+"GET /static/js/jquery.min.js HTTP/1.1" 404 1807
+"GET /static/js/bootstrap.min.js HTTP/1.1" 404 1816
+"GET /static/js/slick.min.js HTTP/1.1" 404 1804
+"GET /static/js/nouislider.min.js HTTP/1.1" 404 1819
+"GET /static/js/jquery.zoom.min.js HTTP/1.1" 404 1822
+"GET /static/js/main.js HTTP/1.1" 404 1789

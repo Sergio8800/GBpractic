@@ -1,0 +1,13 @@
+{% load static %}
+
+					{% if request.user.is_authenticated %}
+						<li><a href="#"><i class="fa fa-envelope-o" ></i> {{ request.user.email }}</a></li>
+						<li><a href="#"><i class="fa fa-dollar"></i> {{ request.user }}</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> Quite </a></li>
+
+					{% else %}
+
+						<li><a href="#"><i class="fa fa-user-o"></i> Registration </a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> My Account </a></li>
+					{% endif %}
+
