@@ -13,6 +13,8 @@ import os.path
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+import debug_toolbar.middleware
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -26,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  '192.168.1.5']  # 0.0.0.0:8000 for access for gsm html://192.168.1.5:8000
-
+INTERNAL_IPS = ['127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,9 +43,12 @@ INSTALLED_APPS = [
     'myapp3',
     'mathfilters',
     'women',
+    # 'debug_toolbar',
 ]
+'debug_toolbar.middleware.DebugToolbarMiddleware'
 
 MIDDLEWARE = [
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

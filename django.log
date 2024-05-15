@@ -8320,3 +8320,78 @@ Not Found: /favicon.ico
 "GET /static/js/nouislider.min.js HTTP/1.1" 404 1819
 "GET /static/js/jquery.zoom.min.js HTTP/1.1" 404 1822
 "GET /static/js/main.js HTTP/1.1" 404 1789
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Auto_site_practic_gb\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 3845)
+"GET /myapp2/ HTTP/1.1" 200 22651
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 14220
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 3848)
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /__debug__/render_panel/?store_id=acc89bcce0324ab3902e1f1a50521ae0&panel_id=HistoryPanel HTTP/1.1" 200 30623
+"GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+"GET /__debug__/render_panel/?store_id=acc89bcce0324ab3902e1f1a50521ae0&panel_id=VersionsPanel HTTP/1.1" 200 621
+"GET /__debug__/render_panel/?store_id=acc89bcce0324ab3902e1f1a50521ae0&panel_id=SettingsPanel HTTP/1.1" 200 26113
+"GET /__debug__/render_panel/?store_id=acc89bcce0324ab3902e1f1a50521ae0&panel_id=HeadersPanel HTTP/1.1" 200 3955
+"GET /__debug__/render_panel/?store_id=acc89bcce0324ab3902e1f1a50521ae0&panel_id=RequestPanel HTTP/1.1" 200 2102
+"GET /__debug__/render_panel/?store_id=acc89bcce0324ab3902e1f1a50521ae0&panel_id=SQLPanel HTTP/1.1" 200 763933
+Watching for file changes with StatReloader
+"GET /myapp2/ HTTP/1.1" 200 13669
+"GET /static/myapp2/css/style2.css HTTP/1.1" 200 3009
+"GET /myapp2/media/photo/2024/05/09/mono1.jpg HTTP/1.1" 200 112802
+"GET /myapp2/media/photos/2024/05/09/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/photo/2024/05/10/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/974x1200.jpg HTTP/1.1" 200 108051
+"GET /myapp2/media/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/10/503x1200.jpg HTTP/1.1" 200 74230
+"GET /myapp2/media/IMG_20190607_WA000454699.jpg HTTP/1.1" 200 77005
+"GET /myapp2/media/photo/2024/05/10/502x1200.jpg HTTP/1.1" 200 38167
+"GET /myapp2/media/photos/2024/05/08/monorueda-electrica-monociclo-inmotion-adventure-v14-324067.jpg HTTP/1.1" 200 198854
+"GET /myapp2/media/photo/2024/05/10/mono2.jpg HTTP/1.1" 200 76545
+"GET /myapp2/media/photo/2024/05/10/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/photo/2024/05/10/mono3.jpg HTTP/1.1" 200 116694
+Not Found: /myapp2/media/1
+"GET /myapp2/media/photo/2024/05/10/mono4.jpg HTTP/1.1" 200 149567
+"GET /myapp2/media/photo/2024/05/10/mono5.jpg HTTP/1.1" 200 27659
+"GET /myapp2/media/v92421b0.jpg HTTP/1.1" 200 133193
+"GET /myapp2/media/vfe212.webp HTTP/1.1" 200 49672
+"GET /myapp2/media/tollcuudda-universal-20000mah-mini-powerbank-4-typ.jpg HTTP/1.1" 200 66658
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+"GET /myapp2/media/NCNPB1_02_nitecore.webp HTTP/1.1" 200 15506
+"GET /myapp2/media/vtimages.jpg HTTP/1.1" 200 6318
+"GET /myapp2/media/420-75_lg.jpg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2533
+"HEAD /myapp2/ HTTP/1.1" 200 0
+"GET /myapp2/orders1/ HTTP/1.1" 200 1344
+"GET /myapp2/orders/ HTTP/1.1" 200 3388
+"GET /myapp2/order/add/ HTTP/1.1" 200 5875
+"GET /myapp2/product/add HTTP/1.1" 301 0
+"GET /myapp2/product/add/ HTTP/1.1" 200 2518
+"GET /myapp2/user/add/ HTTP/1.1" 200 2217
+"GET /myapp2/ HTTP/1.1" 200 13669
+Not Found: /myapp2/media/1
+"GET /myapp2/media/1 HTTP/1.1" 404 5232
+"HEAD /myapp2/ HTTP/1.1" 200 0
